@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Build
+dist
+
+# private
+TODO.md
+
+# vscode settings
+.vscode
+
+# jetbrains dide settings
+.idea
