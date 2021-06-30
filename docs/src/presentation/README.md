@@ -26,7 +26,7 @@ For example, memory management became automatic (thanks toARC) and the layout sy
 In WWDC 2014, Apple annouced the Swift language a modern replacement for Objective-C.
 Following that, apple announced during the next WWDC SwiftUI as the replacement for CocoaTouch.
 
-![swiftui](./assets/swiftui-framework-wwdc.jpg)
+![swiftui](../assets/swiftui-framework-wwdc.jpg)
 
 As of 2021, the majority of new iOS projects use Swift and SwiftUI with CocoaTouch as a fallback.
 

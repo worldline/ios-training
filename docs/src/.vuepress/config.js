@@ -39,16 +39,7 @@ module.exports = {
         sidebar: [
           "/",
           "/presentation/",
-          "/typescript/",
           "/tooling/",
-          "/first-steps/",
-          "/directives/",
-          "/pipes/",
-          "/components/",
-          "/routing/",
-          "/services/",
-          "/rxjs/",
-          "/forms/",
           "/to-go-further/",
           "/ecosystem/"
         ]

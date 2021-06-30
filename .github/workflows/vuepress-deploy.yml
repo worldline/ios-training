@@ -13,5 +13,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: worldline/ios-training
           TARGET_BRANCH: gh_pages
-          BUILD_SCRIPT: cd docs && yarn && yarn build
+          BUILD_SCRIPT: cd docs && npm ci && npm run build
           BUILD_DIR: docs/src/.vuepress/dist/
