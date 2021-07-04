@@ -1,6 +1,6 @@
 # iOS-training
 
-https://worldline.github.io/iOS-training/
+https://worldline.github.io/ios-training/
 
 ## Links
 
