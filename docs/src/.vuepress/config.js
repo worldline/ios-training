@@ -15,7 +15,7 @@ module.exports = {
   },
 
   head: [
-    ['meta', { name: 'theme-color', content: '#C3002F' }],
+    ['meta', { name: 'theme-color', content: '#3366ff' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -40,29 +40,11 @@ module.exports = {
           "/",
           "/presentation/",
           "/tooling/",
+          "/swift/",
           "/to-go-further/",
           "/ecosystem/"
         ]
-      } /*,
-
-      "/fr/": {
-        selectText: "Langue",
-        label: "Français",
-        sidebar: [
-          "/fr/",
-          "/fr/presentation/",
-          "/fr/outillage/",
-          "/fr/typescript/",
-          "/fr/rxjs/",
-          "fr/premiers-pas/",
-          "fr/composants/",
-          "fr/routage/",
-          "fr/services/",
-          "fr/formulaires/",
-          "fr/ecosysteme/",
-          "fr/aller-plus-loin/"
-        ]
-      }*/
+      } 
     }
   },
 

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://developer.apple.com/design/human-interface-guidelines/macos/images/app-icon-realistic-materials.png
+heroImage: /logo.png
 tagline: Getting started with iOS development with Swift and SwiftUI
 actionText: Get started →
 actionLink: /presentation/
@@ -21,6 +21,7 @@ footer: Worldline, 2021
 
 - [Official documentation](https://developer.apple.com/documentation/)
 - [Github repository for this training](https://github.com/worldline/ios-training)
+- [Logo downloaded from icones8](https://icones8.fr/icon/51974/xcode)
 
 ## Table of contents
 

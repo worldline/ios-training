@@ -7,20 +7,18 @@ A macOS operating system is required to fully follow the training. However, you 
 ## Xcode
 
 Install the latest Xcode version from the AppStore.
-You need to run Xcode at least once before starting the training to perform a post setup steps
-At the end of the this phase, you should see a welcome window
+You need to run Xcode at least once before starting the training to perform a post setup steps.
+At the end of the this phase, you should see a welcome window.
 
-## A free or paid Apple developr account
+## Using a free or paid Apple developr account
 
-If you want to deploy your app to a device, you need to have at least a free developer account.
+If you want to deploy your app to a device, you need to have at least a free developer account. A paid account, will allow to develop and test on multiple devices and, most importantly, 
 
-If you are part of a company, you can request to be added to your company account as a developer.
-Once this is done, you'll need to add some certificates to your keychain.
-You can consult with your compa
+If you are part of a company, you can request to be added to your company account as a developer. Once this is done, you'll need to add some certificates to your keychain.
 
 If you want to use a self-owned account You can create one [https://developer.apple.com/](https://developer.apple.com/).
-A free account allows to deploy to a single device at a time.
-This should be enough for this training.
+
+Since a free account allows to deploy to a single device at a time, this should be enough for this training. Otherwise, you can use any paid account that is available to you.
 
 Once you have a developer account (as part of your enterprise or self-owned), you need to add it to Xcode.
 This is done by opneing Xcode and then choosing "Xcode -> Settings -> accounts tab" and then click on the "+" button.
