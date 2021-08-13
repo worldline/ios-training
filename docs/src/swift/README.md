@@ -24,9 +24,19 @@ The following code illustrates some of the features listed above.
 
 In the following sections, we will delve into more features.
 
-## Null safety
-
 ## Functions
+
+The declaration of functions in swift has the following peculiartities:
+
+- Arguments are named and ordered. This means that when you call a function, you must specify the name of the arguments in the correct order.
+- You can make an argument anonymous by naming it `_` during the declaration.
+-
+
+Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function.
+
+The following code snippet
+
+## Null safety
 
 ## Object oriented programming features
 
