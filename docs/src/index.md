@@ -12,6 +12,10 @@ features:
 footer: Worldline, 2021
 ---
 
+::: tip
+This training is also available in [French](/fr/) / Cette formation est aussi disponible en [Français](/fr/)
+:::
+
 ## Prerequisites
 
 - Basic knowledge of programming
