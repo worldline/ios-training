@@ -39,16 +39,17 @@ The following code snippet illustrates the above features.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1n"></iframe>
 
-Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function.
+Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function. Here is a brief summary of the features related to using a function as a 1st class item:
 
-- A function type can be expressed as follows: `(typeOfParam1, typeOfParam2, etc) -> returnType`.
 - A function can be assigned to a variable, passed as a function parameter or returned from a function.
-- The empty return type is 
+- A function type can be expressed as follows: `(typeOfParam1, typeOfParam2, etc) -> returnType`.
+- The empty return type is Void.
 - We can use `typealias` to shorten writing long types.
+- Swift supports anonymous functions (also called lambda function) with the following syntax `{ argName1, argName2, etc. in // code }`
 
-This code snippet illustrates some of these possibilities.
+The following code snippet illustrates these features.
 
-
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1y"></iframe>
 
 ## Null safety
 
