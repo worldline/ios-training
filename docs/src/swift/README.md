@@ -51,7 +51,31 @@ The following code snippet illustrates these features.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1y"></iframe>
 
+Let's explore in the next section, one of the most amazing features of Swift: Null safety.
+
 ## Null safety
+
+In a nutshell, Null safety is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*. The Swift compiler provides null safety and reports errors and warning when we manipulate nullable (also called optional) values. Here is a list of null safety features provided by swift:
+
+::: tip
+In Swift, the null value is called `nil`
+:::
+
+- All types are non optional by default. This means that we cannot assign `nil` to a variable or an argument. For example, this code fails `var s: String = nil`.
+- A type can be made optional by suffixing it with a *?*. For example: `var s: String? = nil`.
+- You cannot call a method or a property of an optional type, unless you do one of those possibilities:
+  - Use optional chaining with the *?* suffix.
+  - Provide a default value with the *??* operator.
+  - Unwrap the optional so that if becomes non optional.
+  - Force unwrap the optional using the *!* suffix. This should never be used as it bypasses null safety checks.
+
+::: danger
+You should never force unwrap with the *!*. Use other unwrapping techniques.
+:::
+
+The following code illustrated null safety and how to use optional types:
+
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3IDP"></iframe>
 
 ## Object oriented programming features
 
