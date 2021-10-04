@@ -73,9 +73,23 @@ In Swift, the null value is called `nil`
 You should never force unwrap with the *!*. Use other unwrapping techniques.
 :::
 
-The following code illustrated null safety and how to use optional types:
+The following code illustrates null safety and how to use optional types:
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3IDP"></iframe>
+
+## Enumerations
+
+Enumerations allow to work with a group of values in a type-safe fashion. Swift provides many interesting features to enumerations:
+
+- When the compiler can infer it, you can omit the name of the enumeration when you use one of its values.
+- Switch statements support enumerations.
+- You can easily iterate over an enum values by using `: CaseIterable`.
+- You can associate values or provide a raw value to enumeration cases. Raw values can be implicitly assigned.
+- You can use another enumeration as associated value, this is called *recursive enumeration*.
+
+The following code illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
+
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3K66"></iframe>
 
 ## Object oriented programming features
 
