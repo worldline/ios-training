@@ -93,4 +93,12 @@ The following code illustrates some enumeration features. For further reading pl
 
 ## Object oriented programming features
 
+Swift supports most Object oriented features: classes, instances, encapsulation, simple inheritance, overriding, overloading, compositions, polymorphism and access control. Multiple inheritance of classes and abstract classes are not supported. *Interfaces* are named *protocols* and have they are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
+
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/41uW"></iframe>
+
+## Functional programming features
+
 ## Sources
+
+- [Swift official documentation](https://docs.swift.org).
