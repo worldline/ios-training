@@ -2,22 +2,25 @@ module.exports = {
   base: "/ios-training/",
   locales: {
     "/": {
-      lang: "en-US",// this will be set as the lang attribute on <html>
+      lang: "en-US", // this will be set as the lang attribute on <html>
       title: "iOS Training",
-      description: "iOS training docs"
+      description: "iOS training docs",
     },
 
     "/fr/": {
       lang: "fr-FR",
       title: "Formation iOS",
-      description: "Support de formation iOS"
-    }
+      description: "Support de formation iOS",
+    },
   },
 
   head: [
-    ['meta', { name: 'theme-color', content: '#3366ff' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3366ff" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -26,10 +29,10 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: "",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "",
+    editLinkText: "",
     lastUpdated: false,
     nav: [],
     locales: {
@@ -42,8 +45,8 @@ module.exports = {
           "/tooling/",
           "/swift/",
           "/to-go-further/",
-          "/ecosystem/"
-        ]
+          "/ecosystem/",
+        ],
       },
 
       "/fr/": {
@@ -55,16 +58,14 @@ module.exports = {
           "/fr/outillage/",
           "/fr/swift/",
           "/fr/pour-aller-plus-loin/",
-          "/fr/ecosysteme/"
-        ]
-      }
-    }
+          "/fr/ecosysteme/",
+        ],
+      },
+    },
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    'vuepress-plugin-global-toc'
-  ]
-}
+  plugins: [],
+};
