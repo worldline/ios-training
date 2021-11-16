@@ -26,7 +26,3 @@ This training is also available in [English](/) / Cette formation est aussi disp
 - [Documentation officielle](https://developer.apple.com/documentation/)
 - [Dépôt Github pour cette formation](https://github.com/worldline/ios-training)
 - [Logo téléchargé depuis icones8](https://icones8.fr/icon/51974/xcode)
-
-## Plan de la formation
-
-<GlobalTableOfContents />
