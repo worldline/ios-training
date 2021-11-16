@@ -44,6 +44,7 @@ module.exports = {
           "/presentation/",
           "/tooling/",
           "/swift/",
+          "/swiftui/",
           "/to-go-further/",
           "/ecosystem/",
         ],

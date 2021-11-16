@@ -1,4 +1,4 @@
-# Presentation of iOS development
+# Presentation
 
 ## What is iOS development ?
 
