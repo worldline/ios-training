@@ -93,11 +93,38 @@ The following code illustrates some enumeration features. For further reading pl
 
 ## Object oriented programming features
 
-Swift supports most Object oriented features: classes, instances, encapsulation, simple inheritance, overriding, overloading, compositions, polymorphism and access control. Multiple inheritance of classes and abstract classes are not supported. *Interfaces* are named *protocols* and have they are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
+Swift supports most Object oriented features: classes, instances, encapsulation, simple inheritance, overriding, overloading, compositions, polymorphism and access control.
+There are some differences and additional features that are highlighted below:
+
+- Multiple inheritance of classes and abstract classes are not supported. 
+- *Interfaces* are named *protocols* and have they are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
+- Extensions allow to add functions and conform to additional protocols outside of the original class declaration.
+This has many uses.
+For example, we can add methods to the standard String class.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/41uW"></iframe>
 
 ## Functional programming features
+
+Functional programming revolves around [three main concepts](https://flexiple.com/ios/introduction-to-functional-programming-using-swift/): pure functions, immutable objects and declarative programming.
+
+Pure functions are functions that do not have side effects and will thus return always the same output given the same input.
+Swift allows to create pure functions but does not provide compile time guarantees that a function is pure.
+
+Immutable objects can be created using classes with constant properties (declared with `let`).
+Another common practice is to use structs for [many good reasons](https://stackoverflow.com/a/24232845).
+One of the most notable ones is that structs are passed around by value and thus are more relevant in the functional paradigm where we want to avoid side effects.
+
+Declarative programming can be easily explained as a way of programming that is centered [around telling what to do and not how to do it](https://blog.ndepend.com/declarative-programming-depth/).
+This allows to obtain a clear and more maintainable code.
+For example, when we want to filter a table, a for loop is not declarative (we say imperative in this case) while the SQL syntax is considered declarative.
+Declarative programing is possible in Swift through chaining functions and passing functions as arguments.
+Indeed, we have seen earlier, Swift has 1st class support for functions.
+In addition to that, we can find declarative APIs in the standard Swift library and in Swift UI.
+The latter will be explored in a different chapter.
+For now, let's illustrate this part by processing a list of strings using only declarative APIs provided by Swift and no for loops.
+
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/42L8"></iframe>
 
 ## Sources
 
