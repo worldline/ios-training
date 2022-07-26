@@ -11,24 +11,24 @@ There are many ways to achieve this:
 This training focuses on iOS development using the official tools and frameworks proposed by Apple. Our development stack will consist of the following items:
 
 - Language: Swift
-- Framework: SwiftUI
+- UI Framework: SwiftUI
 - IDE: Xcode
 
 In addition to that, It is also possible to leverage the Swift language in order to develop console apps and servers on Window, Linux, macOS.
 
 ## Historty
 
-The early days of iOS development were done using the Objective-C language, the CocoaTouch Framework and -the good old- Xcode.
+The early days of iOS development were done using the Objective-C language, the UIKit UI Framework and -the good old- Xcode.
 This ecosystem was basic but quite powerful and allowed to develop amazing apps.
-The continous updates from Apple made development much more developer friendly.
-For example, memory management became automatic (thanks toARC) and the layout system became capable of adapting to different screen sizes.
+The continuous updates from Apple made development much more developer friendly.
+For example, memory management became automatic (thanks to ARC) and the layout system became capable of adapting to different screen sizes.
 
-In WWDC 2014, Apple annouced the Swift language a modern replacement for Objective-C.
-Following that, apple announced during the next WWDC SwiftUI as the replacement for CocoaTouch.
+In WWDC 2014, Apple announced the Swift language as a modern replacement to Objective-C.
+Following that, apple announced during the next WWDC SwiftUI as the replacement for UIKit.
 
 ![swiftui](../assets/swiftui-framework-wwdc.jpg)
 
-As of 2021, the majority of new iOS projects use Swift and SwiftUI with CocoaTouch as a fallback.
+As of 2021, the majority of new iOS projects use Swift and SwiftUI with UIKit as a fallback.
 
 ## Links and references
 

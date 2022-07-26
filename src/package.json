@@ -8,13 +8,14 @@
       "email": "yassine.bennabas@worldline.com"
     }
   ],
-  "repository": "github.com/worldline/iOS-training/iOS-training",
+  "repository": "https://github.com/worldline/ios-training",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^v2.0.0-beta.27"
+    "@types/node": "^18.6.1",
+    "vuepress": "^v2.0.0-beta.49"
   }
 }

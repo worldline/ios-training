@@ -18,17 +18,17 @@ En plus de cela, il est également possible d'exploiter le langage Swift afin de
 
 ## Historique
 
-Les premiers jours du développement iOS ont été réalisés en utilisant le langage Objective-C, le framework CocoaTouch et -le bon vieux- Xcode.
+Les premiers jours du développement iOS ont été réalisés en utilisant le langage Objective-C, le framework UIKit et -le bon vieux- Xcode.
 Cet écosystème était basique mais assez puissant et permettait de développer des applications étonnantes.
 Les mises à jour continues d'Apple ont rendu le développement beaucoup plus convivial pour les développeurs.
 Par exemple, la gestion de la mémoire est devenue automatique (grâce à ARC) et le système de mise en page est devenu capable de s'adapter à différentes tailles d'écran.
 
 Lors de la WWDC 2014, Apple a annoncé le langage Swift comme remplaçant moderne de l'Objective-C.
-Suite à cela, Apple a annoncé lors de la prochaine WWDC SwiftUI en remplacement de CocoaTouch.
+Suite à cela, Apple a annoncé lors de la prochaine WWDC SwiftUI en remplacement de UIKit.
 
 ![swiftui](../../assets/swiftui-framework-wwdc.jpg)
 
-À partir de 2021, la majorité des nouveaux projets iOS utilisent Swift et SwiftUI avec CocoaTouch comme solution de secours.
+À partir de 2021, la majorité des nouveaux projets iOS utilisent Swift et SwiftUI avec UIKit comme solution de secours.
 
 ## Liens et références
 

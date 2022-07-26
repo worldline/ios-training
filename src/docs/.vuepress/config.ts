@@ -1,3 +1,5 @@
+import { defaultTheme } from "@vuepress/theme-default";
+
 module.exports = {
   base: "/ios-training/",
   locales: {
@@ -23,36 +25,23 @@ module.exports = {
     ],
   ],
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
-  themeConfig: {
-    repo: "",
-    editLinks: false,
-    docsDir: "",
-    editLinkText: "",
-    lastUpdated: false,
-    nav: [],
+  theme: defaultTheme({
     locales: {
       "/": {
-        selectText: "Language",
-        label: "English",
+        selectLanguageName: "English",
         sidebar: [
           "/",
           "/presentation/",
-          "/tooling/",
           "/swift/",
-          "/swiftui/",
+          "/ui-development/",
+          "/api-communication/",
           "/to-go-further/",
           "/ecosystem/",
         ],
       },
 
       "/fr/": {
-        selectText: "Langue",
-        label: "Français",
+        selectLanguageName: "Français",
         sidebar: [
           "/fr/",
           "/fr/presentation/",
@@ -63,10 +52,6 @@ module.exports = {
         ],
       },
     },
-  },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
+  }),
   plugins: [],
 };

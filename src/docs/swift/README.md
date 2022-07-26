@@ -1,22 +1,23 @@
 # Swift
 
-Swift is the official programming language for developing iOS, iPadOS, macOS, watchOS and AppleTV apps. It can also target other platforms such as Windows, Linux and Android.
+Swift is the official programming language for developing iOS, iPadOS, macOS, watchOS and AppleTV apps.
+It can also target other platforms such as Windows, Linux and Android.
 
-The source code of the language is hosted on [apple/swift](https://github.com/apple/swift) github repository.
+The source code of the language is hosted on [apple/swift](https://github.com/apple/swift) GitHub repository.
 
 ## A quick tour of some features
 
-Swift has modern and interesting features. Here some quick notable ones:
+Swift has modern and interesting features. Here some notable ones:
 
-- Swift is statically typed and support implicit typing.
+- Swift is statically typed and supports implicit typing.
 - `var` creates mutable variables.
 - `let` creates immutable variables or constants depending on the type.
 - String interpolation is available with this syntax `\(expression)`.
-- Parenthesis are not necessary in `if`, `for`, `while` and `switch` statements
+- Parenthesis are not required in `if`, `for`, `while` and `switch` statements.
 - for-each is the only type of for loop available
-- Types are not nullable by default. More about null safety later.
-- Functional programming features are supported such as Higher-order functions and functions as 1st class items.
-- Object oriented programming is supported however, interfaces are called protocols.
+- Null safety allows to write code free from null pointer errors.
+- Functional programming: Higher-order functions and functions as 1st class items, etc.
+- Object oriented programming is supported. In Swift, interfaces are called protocols.
 
 The following code illustrates some of the features listed above.
 
@@ -26,9 +27,9 @@ In the following sections, we will delve into more features.
 
 ## Functions
 
-In the following, we use the terms argument and parameter interchangeably.
+In the following, we use the terms 'argument' and 'parameter' interchangeably.
 
-The declaration of functions in swift has the following peculiarities:
+The declaration of functions in Swift has the following peculiarities:
 
 - Parameters are named and ordered. This means that when you call a function, you must specify the name of the arguments in the correct order.
 - A parameter can have different external and internal names by declaring it like this: `externalName internalName: Type`. The external name is also called an argument label.
@@ -39,7 +40,7 @@ The following code snippet illustrates the above features.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1n"></iframe>
 
-Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function. Here is a brief summary of the features related to using a function as a 1st class item:
+Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function. Here is a brief summary of the features related to using functions as a 1st class items:
 
 - A function can be assigned to a variable, passed as a function parameter or returned from a function.
 - A function type can be expressed as follows: `(typeOfParam1, typeOfParam2, etc) -> returnType`.
@@ -51,11 +52,11 @@ The following code snippet illustrates these features.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1y"></iframe>
 
-Let's explore in the next section, one of the most amazing features of Swift: Null safety.
+Let's explore in the next section, one of the most amazing features of Swift: null safety.
 
 ## Null safety
 
-In a nutshell, Null safety is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*. The Swift compiler provides null safety and reports errors and warning when we manipulate nullable (also called optional) values. Here is a list of null safety features provided by swift:
+In a nutshell, null safety is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*. The Swift compiler provides null safety and reports errors and warning when we manipulate nullable (also called optional) values. Here is a list of null safety features provided by swift:
 
 ::: tip
 In Swift, the null value is called `nil`
@@ -70,7 +71,7 @@ In Swift, the null value is called `nil`
   - Force unwrap the optional using the *!* suffix. This should never be used as it bypasses null safety checks.
 
 ::: danger
-You should never force unwrap with the *!*. Use other unwrapping techniques.
+You should never force unwrap with the *!*. Use other unwrapping techniques instead.
 :::
 
 The following code illustrates null safety and how to use optional types:
@@ -83,7 +84,7 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 
 - When the compiler can infer it, you can omit the name of the enumeration when you use one of its values.
 - Switch statements support enumerations.
-- You can easily iterate over an enum values by using `: CaseIterable`.
+- You can easily iterate over an enum's values by using `: CaseIterable`.
 - You can associate values or provide a raw value to enumeration cases. Raw values can be implicitly assigned.
 - You can use another enumeration as associated value, this is called *recursive enumeration*.
 
@@ -97,7 +98,7 @@ Swift supports most Object oriented features: classes, instances, encapsulation,
 There are some differences and additional features that are highlighted below:
 
 - Multiple inheritance of classes and abstract classes are not supported. 
-- *Interfaces* are named *protocols* and have they are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
+- *Interfaces* are named *protocols* and they are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
 - Extensions allow to add functions and conform to additional protocols outside of the original class declaration.
 This has many uses.
 For example, we can add methods to the standard String class.
@@ -125,6 +126,10 @@ The latter will be explored in a different chapter.
 For now, let's illustrate this part by processing a list of strings using only declarative APIs provided by Swift and no for loops.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/42L8"></iframe>
+
+Swift has many more features and provides a rich standard library.
+We'll explore them as needed in the next sections.
+For now, let's create some UIs in the next chapter.
 
 ## Sources
 
