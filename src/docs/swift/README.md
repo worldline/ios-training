@@ -105,6 +105,19 @@ For example, we can add methods to the standard String class.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/41uW"></iframe>
 
+In additions to classes, structs in swift are very powerful and provide similar features than classes with some exceptions.
+
+## Use structs by default
+
+As the title says and as surprising as it seems for developers from other languages, Apple recommends using [structs by default instead of classes](https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes).
+
+More pricesely, when we want to add a new data type, we may question
+
+- Use structures by default.
+- Use classes when you need Objective-C interoperability.
+- Use classes when you need to control the identity of the data you’re modeling.
+- Use structures along with protocols to adopt behavior by sharing implementations.
+
 ## Functional programming features
 
 Functional programming revolves around [three main concepts](https://flexiple.com/ios/introduction-to-functional-programming-using-swift/): pure functions, immutable objects and declarative programming.
