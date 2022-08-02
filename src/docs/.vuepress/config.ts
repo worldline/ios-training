@@ -35,6 +35,7 @@ module.exports = {
           "/swift/",
           "/ui-development/",
           "/api-communication/",
+          "/persist-data/",
           "/to-go-further/",
           "/ecosystem/",
         ],
