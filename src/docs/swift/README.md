@@ -52,11 +52,13 @@ The following code snippet illustrates these features.
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1y"></iframe>
 
-Let's explore in the next section, one of the most amazing features of Swift: null safety.
+Let's explore in the next section, one of the most amazing features of Swift which is *optionals*.
 
-## Null safety
+## Optionals (aka. Null safety)
 
-In a nutshell, null safety is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*. The Swift compiler provides null safety and reports errors and warning when we manipulate nullable (also called optional) values. Here is a list of null safety features provided by swift:
+In a nutshell, optionals is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*.
+The Swift compiler provides null safety and reports errors and warning when we manipulate nullable (also called optional) values.
+Here is a list of null safety features provided by swift:
 
 ::: tip
 In Swift, the null value is called `nil`
@@ -77,6 +79,10 @@ You should never force unwrap with the *!*. Use other unwrapping techniques inst
 The following code illustrates null safety and how to use optional types:
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3IDP"></iframe>
+
+### Exercise
+
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/50Td"></iframe>
 
 ## Enumerations
 
