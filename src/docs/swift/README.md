@@ -109,14 +109,28 @@ In additions to classes, structs in swift are very powerful and provide similar 
 
 ## Use structs by default
 
-As the title says and as surprising as it seems for developers from other languages, Apple recommends using [structs by default instead of classes](https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes).
-
-More pricesely, when we want to add a new data type, we may question
+As the title says and as surprising as it seems for developers coming from other languages, Apple recommends using [structs by default instead of classes](https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes).
+More precisely, when we want to add a new data type, we should not assume that it should be a class and check if a structure is more relevant.
+Apple provides the following recommendations:
 
 - Use structures by default.
 - Use classes when you need Objective-C interoperability.
 - Use classes when you need to control the identity of the data you’re modeling.
 - Use structures along with protocols to adopt behavior by sharing implementations.
+
+We note that structures are the default choice mostly because they value types.
+This makes the code more predictable because changes cannot come somewhere from a parent call.
+In addition to that, structures have similar features than classes in Swift.
+They support properties, methods, [subscripts](https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html), initializers, extensions and conforming to protocols.
+The features that are only available in classes [are as follows](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html):
+
+- Inheritance enables one class to inherit the characteristics of another.
+- Type casting enables you to check and interpret the type of a class instance at runtime.
+- Deinitializers enable an instance of a class to free up any resources it has assigned.
+- Reference counting allows more than one reference to a class instance.
+
+Another advantage of structs is that they are more friendly with functional programming.
+We'll talk about this in the next section.
 
 ## Functional programming features
 

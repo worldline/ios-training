@@ -42,3 +42,10 @@ You can also navigate between the different tutorials by using the top bar.
 
 ![navigate swiftui tutorial](../assets/swift-ui-tuto-navoigate.png)
 
+## A summary of important concepts
+
+- State: 
+- Binding
+- EnvironmentObject
+- Observable
+

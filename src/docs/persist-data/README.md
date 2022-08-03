@@ -23,7 +23,7 @@ UserDefaults.standard.set(self.tapCount, forKey: "Tap")
 
 ## Codable saved in a file
 
-A more advanced and powerful technique is to manually load and persist a codable into a file. 
+A more advanced and powerful technique is to manually load and persist a Codable into a file. 
 This technique is useful if you want to store complex objects (such as the state or model) in a JSON file.
 There are two steps in this process, the first one consists of decoding / encoding the object from / into JSON using `JSONDecoder().decode` and `JSONEncoder().encode`.
 The second step consists of loading / saving the encoded data and we can think of two ways to achieve this.
