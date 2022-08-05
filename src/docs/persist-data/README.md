@@ -64,7 +64,7 @@ As opposed to Realm and Core Data, which are local first databases, Firebase dat
 This means that Firebase Datastore requires an internet connection to store and load the data.
 However, the library is simple to use and supports real time updates.
 
-:::hint
+::: tip
 Firebase datastore is part of a bigger suite of service called Firebase.
 For example, we can *Firebase App Distribution* in Firebase, which is a service that allows to deploy and distribute apps without going the burden of using TestFlight.
 :::

@@ -1,4 +1,6 @@
 import { defaultTheme } from "@vuepress/theme-default";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 module.exports = {
   base: "/ios-training/",
@@ -15,7 +17,6 @@ module.exports = {
       description: "Support de formation iOS",
     },
   },
-
   head: [
     ["meta", { name: "theme-color", content: "#3366ff" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -32,7 +33,8 @@ module.exports = {
         sidebar: [
           "/",
           "/presentation/",
-          "/swift/",
+          "/swift-part1/",
+          "/swift-part2/",
           "/ui-development/",
           "/api-communication/",
           "/persist-data/",
@@ -54,5 +56,16 @@ module.exports = {
       },
     },
   }),
-  plugins: [],
+  plugins: [
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "Search",
+        },
+        "/fr/": {
+          placeholder: "Rechercher",
+        },
+      },
+    }),
+  ],
 };
