@@ -15,9 +15,43 @@ For example, we can add methods to the standard String class.
 
 In additions to classes, structs in swift are very powerful and provide similar features than classes with some exceptions.
 
+## Structs
+
+In Swift, structs have similar features than classes.
+They support properties, methods, [subscripts](https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html), initializers, extensions and conforming to protocols.
+The features that are only available in classes [are as follows](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html):
+
+- Inheritance enables one class to inherit the characteristics of another.
+- Type casting enables you to check and interpret the type of a class instance at runtime.
+- Deinitializers enable an instance of a class to free up any resources it has assigned.
+- Reference counting allows more than one reference to a class instance.
+
+The following code sample shows how to use structs with protocols
+
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/51id"></iframe>
+
+## Opaque types
+
+This feature seems advanced to understand but since it's used a lot in SwiftUI, let's explore a simple explanation and we'll provide some links to study it further.
+
+In a base level, opaque types allow to return Protocols while keeping the concrete type information known by the compiler.
+It is enabled by prefixing the type with `some` keyword.
+
+This allows to keeps the benefits of abstracting the code on a developer level while maintaining the performance and optimization benefits of concrete typing.
+In addition to that, it allows the compiler to better handle some cases such as Self or associated type requirements.
+https://www.educative.io/answers/what-is-opaque-type-in-swift
+
+
+Please note that explaining all the benefits that opaque types bring to code is an advanced topic.
+For more information and details, please read the articles mentioned in the [Sources and more reading section](#sources-and-more-reading) 
+
+
+As of Swift 5.1 [opaque types are only available for return values](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md).
+As of Swift 5.7 [opaque arguments have been implemented](https://github.com/apple/swift-evolution/blob/main/proposals/0341-opaque-parameters.md)
+
 ## Use structs by default
 
-As the title says and as surprising as it seems for developers coming from other languages, Apple recommends using [structs by default instead of classes](https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes).
+As surprising as it seems, Apple recommends using [structs by default instead of classes](https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes).
 More precisely, when we want to add a new data type, we should not assume that it should be a class and check if a structure is more relevant.
 Apple provides the following recommendations:
 
@@ -28,17 +62,8 @@ Apple provides the following recommendations:
 
 We note that structures are the default choice mostly because they value types.
 This makes the code more predictable because changes cannot come somewhere from a parent call.
-In addition to that, structures have similar features than classes in Swift.
-They support properties, methods, [subscripts](https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html), initializers, extensions and conforming to protocols.
-The features that are only available in classes [are as follows](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html):
-
-- Inheritance enables one class to inherit the characteristics of another.
-- Type casting enables you to check and interpret the type of a class instance at runtime.
-- Deinitializers enable an instance of a class to free up any resources it has assigned.
-- Reference counting allows more than one reference to a class instance.
-
 Another advantage of structs is that they are more friendly with functional programming.
-We'll talk about this in the next section.
+We'll talk about functional programming in the next section.
 
 ## Functional programming features
 
@@ -66,6 +91,30 @@ Swift has many more features and provides a rich standard library.
 We'll explore them as needed in the next sections.
 For now, let's create some UIs in the next chapter.
 
-## Sources
+## Exercises
+
+### Exercise 1
+
+<iframe width='100%' height="700px" src=""></iframe>
+
+Please open the details pane to see the solution(s)
+
+::: details
+<iframe width='100%' height="700px" src=""></iframe>
+:::
+
+### Exercise 2
+
+<iframe width='100%' height="700px" src=""></iframe>
+
+Please open the details pane to see the solution(s)
+
+::: details
+<iframe width='100%' height="700px" src=""></iframe>
+:::
+
+## Sources and more reading
 
 - [Swift official documentation](https://docs.swift.org).
+- [Understanding opaque types in Swift](https://tanaschita.com/20220206-understanding-opaque-types-in-swift/)
+- [Swift evolution Opaque Result Types](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md)

@@ -100,17 +100,17 @@ The following code illustrates some enumeration features. For further reading pl
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/515a"></iframe>
 
-Please open the details pane to see the solutions
+Please open the details pane to see the solution(s)
 
 ::: details
-<iframe width='100%' height="700px" src=""></iframe>
+<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/51fU"></iframe>
 :::
 
 ### Exercise 2
 
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/50Td"></iframe>
 
-Please open the details pane to see the solutions
+Please open the details pane to see the solution(s)
 
 ::: details
 <iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/5158"></iframe>
