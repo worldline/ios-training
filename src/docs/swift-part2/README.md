@@ -37,13 +37,29 @@ This feature seems advanced to understand but since it's used a lot in SwiftUI, 
 In a base level, opaque types allow to return Protocols while keeping the concrete type information known by the compiler.
 It is enabled by prefixing the type with `some` keyword.
 
-This allows to keeps the benefits of abstracting the code on a developer level while maintaining the performance and optimization benefits of concrete typing.
+This allows to keep the benefits of abstracting the code on a developer level while maintaining the performance and optimization benefits of concrete typing.
 In addition to that, it allows the compiler to better handle some cases such as Self or associated type requirements.
-https://www.educative.io/answers/what-is-opaque-type-in-swift
+Please note that explaining all the features that opaque types bring to the code is an advanced topic.
+For more information and details, please read the articles mentioned in the [Sources and more reading section](#sources-and-more-reading).
 
+For this training, we'll assume that opaque help the compiler perform better optimizations with protocols and is used a lot in SwiftUI.
+In addition to that, we'll show below a simple use case where we can see a concrete benefit of opaque types.
 
-Please note that explaining all the benefits that opaque types bring to code is an advanced topic.
-For more information and details, please read the articles mentioned in the [Sources and more reading section](#sources-and-more-reading) 
+```swift
+// https://www.educative.io/answers/what-is-opaque-type-in-swift
+
+// create a function that returns some Equatable
+func makeInteger() -> some Equatable{ 
+  Int.random(in: 0...10)
+} 
+
+let firstInteger = makeInteger()
+let secondInteger = makeInteger()
+
+// comparing the firstInteger and secondInteger return type
+//  this returns a result "false" because they are of the same return type else, Xcode will scream at us.
+print(firstInteger == secondInteger) 
+```
 
 
 As of Swift 5.1 [opaque types are only available for return values](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md).
