@@ -107,7 +107,7 @@ For now, let's create some UIs in the next chapter.
 
 ### Exercise 1
 
-[Please click on this link to view the exercise](https://swiftfiddle.com/)
+[Please click on this link to view the exercise](https://swiftfiddle.com/5d65286d3db0ccf08f7ca3bf1cef31fe)
 
 Please open the details pane to see the solution(s)
 
@@ -117,12 +117,12 @@ Please open the details pane to see the solution(s)
 
 ### Exercise 2
 
-[Please click on this link to view the exercise](https://swiftfiddle.com/)
+[Please click on this link to view the exercise](https://swiftfiddle.com/43fc226645abb5457d26c7176fb6009d)
 
 Please open the details pane to see the solution(s)
 
 ::: details
-[Solution](https://swiftfiddle.com/)
+[Solution](https://swiftfiddle.com/a1227e17989ad80da5137a31aa6dfbeb)
 
 ## Sources and more reading
 
