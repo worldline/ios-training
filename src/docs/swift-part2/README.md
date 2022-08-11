@@ -11,7 +11,7 @@ There are some differences and additional features that are highlighted below:
 This has many uses.
 For example, we can add methods to the standard String class.
 
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/41uW"></iframe>
+[This code snippet](https://swiftfiddle.com/05f4d4d3c8235299a875e08dcb3992f8) illustrates the above features.
 
 In additions to classes, structs in swift are very powerful and provide similar features than classes with some exceptions.
 
@@ -26,9 +26,7 @@ The features that are only available in classes [are as follows](https://docs.sw
 - Deinitializers enable an instance of a class to free up any resources it has assigned.
 - Reference counting allows more than one reference to a class instance.
 
-The following code sample shows how to use structs with protocols
-
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/51id"></iframe>
+[This code snippet](https://swiftfiddle.com/d72ea73dcbae5cc25908c56bdabcf877) sample shows how to use structs with protocols.
 
 ## Opaque types
 
@@ -99,9 +97,7 @@ Declarative programing is possible in Swift through chaining functions and passi
 Indeed, we have seen earlier, Swift has 1st class support for functions.
 In addition to that, we can find declarative APIs in the standard Swift library and in Swift UI.
 The latter will be explored in a different chapter.
-For now, let's illustrate this part by processing a list of strings using only declarative APIs provided by Swift and no for loops.
-
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/42L8"></iframe>
+For now, let's illustrate [with this code snippet](https://swiftfiddle.com/4cebea7bfea3d58600df30f1af325663) how to process a list of strings using only declarative APIs provided by Swift and no for loops.
 
 Swift has many more features and provides a rich standard library.
 We'll explore them as needed in the next sections.
@@ -111,23 +107,22 @@ For now, let's create some UIs in the next chapter.
 
 ### Exercise 1
 
-<iframe width='100%' height="700px" src=""></iframe>
+[Please click on this link to view the exercise](https://swiftfiddle.com/)
 
 Please open the details pane to see the solution(s)
 
 ::: details
-<iframe width='100%' height="700px" src=""></iframe>
+[Solution](https://swiftfiddle.com/41469e54bc7c025b003341a0e96f16a3)
 :::
 
 ### Exercise 2
 
-<iframe width='100%' height="700px" src=""></iframe>
+[Please click on this link to view the exercise](https://swiftfiddle.com/)
 
 Please open the details pane to see the solution(s)
 
 ::: details
-<iframe width='100%' height="700px" src=""></iframe>
-:::
+[Solution](https://swiftfiddle.com/)
 
 ## Sources and more reading
 
