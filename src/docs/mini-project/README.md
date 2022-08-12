@@ -21,6 +21,12 @@ The app consists of a movie explorer app with the following features:
 Do not use the Playground app as it does not work well with SwiftUI + Swift Concurrency (async await)
 :::
 
+A preview of the app can be seen here.
+[link](https://youtube.com/shorts/vh5AlaGK0Eo?feature=share)
+<iframe>
+
+</iframe>
+
 ## Hints
 
 - There many techniques to handle the flow from the login view to the movie list view.
