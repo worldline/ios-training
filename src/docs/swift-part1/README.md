@@ -19,9 +19,7 @@ Swift has modern and interesting features. Here some notable ones:
 - Functional programming: Higher-order functions and functions as 1st class items, etc.
 - Object oriented programming is supported. In Swift, interfaces are called protocols.
 
-The following code illustrates some of the features listed above.
-
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3tZJ"></iframe>
+[This code snippet](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustrates some of the features listed above.
 
 In the following sections, we will delve into more features.
 
@@ -36,9 +34,7 @@ The declaration of functions in Swift has the following peculiarities:
 - You can make an parameter anonymous by setting this external name: `_`.
 - Arguments can have a default value. These are also called optional arguments.
 
-The following code snippet illustrates the above features.
-
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1n"></iframe>
+[This code snippet](https://swiftfiddle.com/690a3e3bbe580f524f72358ccdb696da) illustrates the above features.
 
 Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function. Here is a brief summary of the features related to using functions as a 1st class items:
 
@@ -48,11 +44,9 @@ Swift allows to use functions as first class items. This allows to store functio
 - We can use `typealias` to shorten writing long types.
 - Swift supports anonymous functions (also called lambda function) with the following syntax `{ argName1, argName2, etc. in // code }`
 
-The following code snippet illustrates these features.
+[This code snippet](https://swiftfiddle.com/5d6b837c869bf23615376bc4cc70bcd1) illustrates these features.
 
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3v1y"></iframe>
-
-Let's explore in the next section, one of the most amazing features of Swift which is *optionals*.
+Let's explore in the next section, one of the most amazing features of Swift which is *Optionals*.
 
 ## Optionals (aka. Null safety)
 
@@ -76,9 +70,7 @@ In Swift, the null value is called `nil`
 You should never force unwrap with the *!*. Use other unwrapping techniques instead.
 :::
 
-The following code illustrates null safety and how to use optional types:
-
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3IDP"></iframe>
+[This code snippet](https://swiftfiddle.com/fa7ad8713475c04666462236db939857) illustrates null safety and how to use optional types.
 
 ## Enumerations
 
@@ -90,30 +82,28 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 - You can associate values or provide a raw value to enumeration cases. Raw values can be implicitly assigned.
 - You can use another enumeration as associated value, this is called *recursive enumeration*.
 
-The following code illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
-
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/3K66"></iframe>
+[This code snippet](https://swiftfiddle.com/d508deb3493e9b572eaf00891c91d8f0) illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
 
 ## Exercises
 
 ### Exercise 1
 
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/515a"></iframe>
+[Please click on this link to view the exercise](https://swiftfiddle.com/6a40668c99d1e2cf079be7525548ca60)
 
 Please open the details pane to see the solution(s)
 
 ::: details
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/51fU"></iframe>
+[Solution](https://swiftfiddle.com/4e97fc9476694424b0fbab6dd8118c35)
 :::
 
 ### Exercise 2
 
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/50Td"></iframe>
+[Please click on this link to view the exercise](https://swiftfiddle.com/0e980f44cf6855c63f3a9ce772872dde)
 
 Please open the details pane to see the solution(s)
 
 ::: details
-<iframe width='100%' height="700px" src="https://www.jdoodle.com/embed/v0/5158"></iframe>
+[Solution](https://swiftfiddle.com/1bb9a747f719e0f35ca470c079a1e453)
 :::
 
 ## Sources

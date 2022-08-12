@@ -38,8 +38,8 @@ module.exports = {
           "/ui-development/",
           "/api-communication/",
           "/persist-data/",
+          "/mini-project/",
           "/to-go-further/",
-          "/ecosystem/",
         ],
       },
 
@@ -51,7 +51,6 @@ module.exports = {
           "/fr/outillage/",
           "/fr/swift/",
           "/fr/pour-aller-plus-loin/",
-          "/fr/ecosysteme/",
         ],
       },
     },
