@@ -11,7 +11,7 @@ struct ContentView: View {
                 NavigationLink(destination: MovieListView().navigationTitle("Movies"), isActive: $loggedIn) {
                     EmptyView()
                 }.hidden()
-                LoginView {
+                LoginView { userResponse in
                     loggedIn = true
                 }.padding()
             }
