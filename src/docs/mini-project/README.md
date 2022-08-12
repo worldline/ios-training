@@ -72,4 +72,4 @@ Button("Login") {
 - If you can't add SwiftPM packages from Xcode, add them by editing the *package.swift* file.
 Here is an example below.
 
-@[code swift](../../../corrections/iOS-training%20Moovy.swiftpm/Package.swift)
+@[code swift](../../../corrections/iOS-training-Moovy.swiftpm/Package.swift)
