@@ -32,9 +32,13 @@ let package = Package(
             ]
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/Tunous/DebouncedOnChange.git", .upToNextMajor(from: "1.0.0"))
+    ],
     targets: [
         .executableTarget(
             name: "AppModule",
+            dependencies: ["DebouncedOnChange"],
             path: "."
         )
     ]

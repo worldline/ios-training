@@ -1,4 +1,4 @@
-struct Movie {
+struct Movie: Codable {
     let title: String
     let released: String
     let director: String

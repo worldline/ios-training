@@ -3,18 +3,15 @@ import SwiftUI
 // try fullscreencover for login view https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
 
 struct ContentView: View {
-    @State var loggedIn = false
+    @State var userResponse: UserResponse?
     
     var body: some View {
-        NavigationView {
-            VStack{
-                NavigationLink(destination: MovieListView().navigationTitle("Movies"), isActive: $loggedIn) {
-                    EmptyView()
-                }.hidden()
-                LoginView { userResponse in
-                    loggedIn = true
-                }.padding()
-            }
+        if let userResponse = userResponse {
+            MovieListView(userResponse: userResponse).navigationTitle("Movies")
+        } else {
+            LoginView { newUserResponse in
+                userResponse = newUserResponse
+            }.padding()
         }
     }
 }

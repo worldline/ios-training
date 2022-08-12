@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "debouncedonchange",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tunous/DebouncedOnChange.git",
+      "state" : {
+        "revision" : "27070b63575c06ba91678a026459c528c18d0cb1",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
