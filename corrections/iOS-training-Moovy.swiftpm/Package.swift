@@ -29,16 +29,21 @@ let package = Package(
                 .landscapeRight,
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-            ]
+            ],
+            appCategory: .entertainment
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Tunous/DebouncedOnChange.git", .upToNextMajor(from: "1.0.0"))
+        .package(url: "https://github.com/Tunous/DebouncedOnChange.git", "1.0.0"..<"2.0.0"),
+        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", "3.0.0"..<"4.0.0")
     ],
     targets: [
         .executableTarget(
             name: "AppModule",
-            dependencies: ["DebouncedOnChange"],
+            dependencies: [
+                "DebouncedOnChange",
+                "KeychainAccess"
+            ],
             path: "."
         )
     ]

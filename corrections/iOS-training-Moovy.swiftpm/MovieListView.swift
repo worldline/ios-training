@@ -14,25 +14,23 @@ struct MovieListView: View {
     @State private var movieListState: MovieListState = .neutral
     
     var body: some View {
-        NavigationView {
-            List(movies, id: \.title){ movie in
-                NavigationLink(movie.title, destination: MovieDetailView(movie: movie).navigationTitle(movie.title))
-            }
-            .navigationTitle("Movies")
-            .searchable(text: $query)
-            .onSubmit(of: .search) {
-                Task {
-                    await searchMovies(query: query)
-                }
-            }
-            .onChange(of: query, debounceTime: 0.5) { newQuery in
-                Task {
-                    await searchMovies(query: newQuery)
-                }
-            }
-            .task { // launch task on view load
+        List(movies, id: \.title){ movie in
+            NavigationLink(movie.title, destination: MovieDetailView(movie: movie).navigationTitle(movie.title))
+        }
+        .navigationTitle("Movies")
+        .searchable(text: $query)
+        .onSubmit(of: .search) {
+            Task {
                 await searchMovies(query: query)
             }
+        }
+        .onChange(of: query, debounceTime: 0.5) { newQuery in
+            Task {
+                await searchMovies(query: newQuery)
+            }
+        }
+        .task { // launch task on view load
+            await searchMovies(query: query)
         }
     }
     
