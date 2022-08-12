@@ -14,6 +14,7 @@ The app consists of a movie explorer app with the following features:
 - The app uses [this API](https://vue-js-backend.herokuapp.com/api-docs/#/) for the authenticating and searching for movies (an empty search string returns all the movies).
   - The **/movies/search** endpoint requires to pass the token retrieved from endpoint **/user/login** or **user/register** with this header: `Authorization: Bearer \(userResponse.token)`
 - (Optional) The result of previous queries is locally cached.
+- (Optional) Animate the transition between the login view and the movie list view ([tutorial](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-and-remove-views-with-a-transition)).
 
 ::: danger
 Do not use the Playground app as it does not work well with SwiftUI + Swift Concurrency (async await)

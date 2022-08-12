@@ -3,15 +3,17 @@ import SwiftUI
 struct MovieDetailView: View {
     let movie: Movie
     var body: some View {
-        VStack {
-            HStack {
-                Text("Movie \(movie.title)")
-                Spacer()
-                Text(movie.metascore)
-            }
-            AsyncImage(url: URL(string: movie.poster))
-            Text(movie.plot)
-        }.padding()
+        ScrollView {
+            VStack {
+                HStack {
+                    Text("Movie \(movie.title)")
+                    Spacer()
+                    Text(movie.metascore)
+                }
+                AsyncImage(url: URL(string: movie.poster))
+                Text(movie.plot)
+            }.padding()
+        }
     }
 }
 
