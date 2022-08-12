@@ -10,6 +10,7 @@ The app consists of a movie explorer app with the following features:
 - View the details of the selected movie.
 - The app requires the user to be logged in.
 - The app allows a new user to register.
+- The movie list screen allows to logout from the app.
 - The app remembers the logged in user after a restart.
 - The app uses [this API](https://vue-js-backend.herokuapp.com/api-docs/#/) for the authenticating and searching for movies (an empty search string returns all the movies).
   - The **/movies/search** endpoint requires to pass the token retrieved from endpoint **/user/login** or **user/register** with this header: `Authorization: Bearer \(userResponse.token)`
