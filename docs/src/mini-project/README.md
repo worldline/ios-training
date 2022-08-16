@@ -22,10 +22,15 @@ Do not use the Playground app as it does not work well with SwiftUI + Swift Conc
 :::
 
 A preview of the app can be seen here.
-[link](https://youtube.com/shorts/vh5AlaGK0Eo?feature=share)
-<iframe>
 
-</iframe>
+<iframe
+ width="720"
+ height="576"
+ src="https://www.youtube.com/embed/vh5AlaGK0Eo"
+ title="YouTube video player"
+ frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen />
 
 ## Hints
 

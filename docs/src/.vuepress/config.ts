@@ -1,7 +1,7 @@
 import { defaultTheme } from "@vuepress/theme-default";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { nprogressPlugin } from "@vuepress/plugin-nprogress";
-const { pwaPlugin } = require("@vuepress/plugin-pwa");
+import { pwaPlugin } from "@vuepress/plugin-pwa";
 
 module.exports = {
   base: "/ios-training/",
@@ -22,7 +22,6 @@ module.exports = {
     ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
     ["meta", { name: "theme-color", content: "#2176d6" }],
   ],
-
   theme: defaultTheme({
     logo: "/logo.png",
     repo: "worldline/ios-training",
@@ -68,4 +67,16 @@ module.exports = {
     nprogressPlugin(),
     pwaPlugin({}),
   ],
+  markdown: {
+    extendMarkdown: (md) => {
+      // use more markdown-it plugins!
+      md.use(require("markdown-it-video-ext"));
+      console.log("hello");
+    },
+  },
+  extendMarkdown: (md) => {
+    // use more markdown-it plugins!
+    md.use(require("markdown-it-video-ext"));
+    console.log("hello");
+  },
 };
