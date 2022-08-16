@@ -7,40 +7,50 @@ The source code of the language is hosted on [apple/swift](https://github.com/ap
 
 ## A quick tour of some features
 
-Swift has modern and interesting features. Here some notable ones:
+Swift has modern and interesting features. Here are some notable ones:
 
 - Swift is statically typed and supports implicit typing.
+  - *Static* typing: types cannot change on runtime (it is the opposite of dynamic typing).
+  - *Implicit* typing: the compiler can infer the type whenever possible.
 - `var` creates mutable variables.
-- `let` creates immutable variables or constants depending on the type.
+- `let` creates immutable variables or constants.
 - String interpolation is available with this syntax `\(expression)`.
 - Parenthesis are not required in `if`, `for`, `while` and `switch` statements.
-- for-each is the only type of for loop available
-- Null safety allows to write code free from null pointer errors.
-- Functional programming: Higher-order functions and functions as 1st class items, etc.
-- Object oriented programming is supported. In Swift, interfaces are called protocols.
+- for-each is the only type of for loop available.
+- *Optionals* allows to write code free from null pointer errors (also called Null Safety in other languages).
+- Functional programming is supported (Higher-order functions and functions as 1st class items, etc.).
+- Object oriented programming is supported. 
+- Interfaces are called protocols and they are used a lot.
+- Structures are available and provide a lot of features (More on that later).
 
 [This code snippet](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustrates some of the features listed above.
 
 In the following sections, we will delve into more features.
 
+::: tip ++ and -- are removed since swift 3
+[This post](https://github.com/apple/swift-evolution/blob/master/proposals/0004-remove-pre-post-inc-decrement.md) details all the problems related to using these operators.
+:::
+
 ## Functions
 
-In the following, we use the terms 'argument' and 'parameter' interchangeably.
+In the this section, the terms 'argument' and 'parameter' are used interchangeably.
 
 The declaration of functions in Swift has the following peculiarities:
 
-- Parameters are named and ordered. This means that when you call a function, you must specify the name of the arguments in the correct order.
+- Parameters are named and ordered. This means that when you call a function, you must specify the name of the arguments in the same order as the declaration.
 - A parameter can have different external and internal names by declaring it like this: `externalName internalName: Type`. The external name is also called an argument label.
-- You can make an parameter anonymous by setting this external name: `_`.
+- You can make a parameter anonymous by setting this external name: `_`.
 - Arguments can have a default value. These are also called optional arguments.
 
 [This code snippet](https://swiftfiddle.com/690a3e3bbe580f524f72358ccdb696da) illustrates the above features.
 
-Swift allows to use functions as first class items. This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function. Here is a brief summary of the features related to using functions as a 1st class items:
+Swift allows to use functions as first class items or citizens.
+This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function.
+Here is a brief listing of the these features:
 
 - A function can be assigned to a variable, passed as a function parameter or returned from a function.
 - A function type can be expressed as follows: `(typeOfParam1, typeOfParam2, etc) -> returnType`.
-- The empty return type is Void.
+- The empty return type is `Void`.
 - We can use `typealias` to shorten writing long types.
 - Swift supports anonymous functions (also called lambda function) with the following syntax `{ argName1, argName2, etc. in // code }`
 
@@ -51,10 +61,10 @@ Let's explore in the next section, one of the most amazing features of Swift whi
 ## Optionals (aka. Null safety)
 
 In a nutshell, optionals is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*.
-The Swift compiler provides null safety and reports errors and warning when we manipulate nullable (also called optional) values.
+The Swift compiler provides null safety and reports errors and warnings when we manipulate nullable (also called optional) values.
 Here is a list of null safety features provided by swift:
 
-::: tip
+::: tip The name of null in iOS development
 In Swift, the null value is called `nil`
 :::
 
@@ -63,11 +73,14 @@ In Swift, the null value is called `nil`
 - You cannot call a method or a property of an optional type, unless you do one of those possibilities:
   - Use optional chaining with the *?* suffix.
   - Provide a default value with the *??* operator.
-  - Unwrap the optional so that if becomes non optional.
-  - Force unwrap the optional using the *!* suffix. This should never be used as it bypasses null safety checks.
+  - Unwrap the optional so that it becomes non optional.
+  - Force unwrap the optional using the *!* suffix. This should never be used as it bypasses compiler checks.
 
-::: danger
-You should never force unwrap with the *!*. Use other unwrapping techniques instead.
+::: danger Never unwrap with !
+You must never force unwrap with the *!*. 
+Use other unwrapping techniques instead.
+On of the rarest exceptions is with Interface builder's Outlets in UIKit `@IBOutlet var label: UILabel!`.
+Fortunately, since we are not using UIKit in this training, we will avoid this situation.
 :::
 
 [This code snippet](https://swiftfiddle.com/fa7ad8713475c04666462236db939857) illustrates null safety and how to use optional types.
@@ -90,9 +103,7 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 
 [Please click on this link to view the exercise](https://swiftfiddle.com/6a40668c99d1e2cf079be7525548ca60)
 
-Please open the details pane to see the solution(s)
-
-::: details
+::: details Please open to see the solution(s)
 [Solution](https://swiftfiddle.com/4e97fc9476694424b0fbab6dd8118c35)
 :::
 
@@ -100,9 +111,7 @@ Please open the details pane to see the solution(s)
 
 [Please click on this link to view the exercise](https://swiftfiddle.com/0e980f44cf6855c63f3a9ce772872dde)
 
-Please open the details pane to see the solution(s)
-
-::: details
+::: details Please open to see the solution(s)
 [Solution](https://swiftfiddle.com/1bb9a747f719e0f35ca470c079a1e453)
 :::
 
