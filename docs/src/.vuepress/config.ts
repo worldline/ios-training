@@ -27,6 +27,8 @@ module.exports = {
   ],
 
   theme: defaultTheme({
+    logo: "/logo.png",
+    repo: "worldline/ios-training",
     locales: {
       "/": {
         selectLanguageName: "English",
