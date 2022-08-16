@@ -1,6 +1,7 @@
 import { defaultTheme } from "@vuepress/theme-default";
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchPlugin } from "@vuepress/plugin-search";
+import { nprogressPlugin } from "@vuepress/plugin-nprogress";
+const { pwaPlugin } = require("@vuepress/plugin-pwa");
 
 module.exports = {
   base: "/ios-training/",
@@ -18,12 +19,8 @@ module.exports = {
     },
   },
   head: [
-    ["meta", { name: "theme-color", content: "#3366ff" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-    ],
+    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
+    ["meta", { name: "theme-color", content: "#2176d6" }],
   ],
 
   theme: defaultTheme({
@@ -68,5 +65,7 @@ module.exports = {
         },
       },
     }),
+    nprogressPlugin(),
+    pwaPlugin({}),
   ],
 };
