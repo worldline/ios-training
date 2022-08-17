@@ -1,5 +1,9 @@
 # Swift (part 1)
 
+::: tip Estimated time
+1/2 day
+:::
+
 Swift is the official programming language for developing iOS, iPadOS, macOS, watchOS and AppleTV apps.
 It can also target other platforms such as Windows, Linux and Android.
 

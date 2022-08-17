@@ -1,15 +1,25 @@
 # Locally persisting data
 
-Persisting data locally consists of storing data after the app has been killed and the variables removed from memory.
+::: tip Estimated time
+1/4 day
+:::
+
+Persisting data locally consists of keeping app data after the app has been killed and the variables removed from memory.
 The persisted data offers many advantages.
 We can use it to show initial data when the app starts and waits for the first batch data to be fetched from the server.
 It can also be used to allow for offline app usage.
 
-There are many to persist data in SwiftUI:
+::: warning iOS isolates app data from other apps
+For security reasons, each app is isolated from the rest of the apps.
+This is called sandboxing.
+[This article](https://medium.com/@dinesh.kachhot/different-ways-to-share-data-between-apps-de75a0a46d4a) show the different ways that allow two or more apps to share their data
+:::
+
+There are many ways to persist data in SwiftUI that we cover below.
 
 ## UserDefaults
 
-It is a very simple key-value storage that persists in a file. 
+It is a very simple key-value storage that persists data in a file. 
 The API surface is very small and the developer does not need to manage the persisted file. 
 This makes this technique very efficient for simple storage use cases. 
 You can find a short [guide here](https://www.hackingwithswift.com/books/ios-swiftui/storing-user-settings-with-userdefaults). 
@@ -32,18 +42,24 @@ Another one consists of creating and managing a file by the developer using file
 
 ## Sophisticated data persistence libraries
 
-For storing data in a database or similar fashion, SQLite is available as a low level library
-It is not recommended to use unless there is a performance concern of for very niche reason.
+For storing data in a database or similar fashion, SQLite is available as a low level library.
+It is not recommended to use it unless there is a strong performance concern.
 Instead, it is recommended to use libraries specialized in data persistence. Some can be assimilated to an ORM library (Object Relational Mapper).
-The remainder of this section describes some of them. 
+The remainder of this section describes some of them.
+
+::: warning Please be careful about the pricing of cloud storage
+Sophisticated databases generally provide cloud storage to provide a complete offer.
+If you're interested in storing data in the cloud, please take some time to read the pricing page to avoid any bad surprises when your app runs in produciton.
+:::
 
 ### Core Data
 
 [Core Data](https://developer.apple.com/documentation/coredata) is the official library to "Persist or cache data on a single device, or sync data to multiple devices with CloudKit".
 It existed since iOS 3 and Apple continuously updates it to keep it relevant.
 It also has the reputation of having a steep learning curve, but it remains famous among developers.
+
 It works similarly as an ORM where classes are mapped into tables.
-Xcode provides a graphical editor that allow to specify the tables, the relations and generate the necessary code (in Swift or Objective-C).
+Xcode provides a graphical editor that allows to specify the tables, the relations and generate the necessary code (in Swift or Objective-C).
 
 ![Core date editor](https://docs-assets.developer.apple.com/published/fbb9767e96/rendered2x-1622022015.png)
 
@@ -56,7 +72,6 @@ This article shows [how to use Core Data in a SwiftUI project](https://www.hacki
 It can be seen as alternative to Core Data as they seem to provide a similar list of features.
 Most notably, the possibility to store data locally or in the cloud.
 The points where Realm wins is that the library seems simpler to learn and to use and that it is also available in Android.
-However, please be careful about the pricing of the cloud storage.
 
 ### Firebase datastore (or any other cloud based storage)
 

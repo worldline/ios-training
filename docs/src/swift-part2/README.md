@@ -1,5 +1,9 @@
 # Swift (part 2)
 
+::: tip Estimated time
+1/2 day
+:::
+
 ## Object oriented programming features
 
 Swift supports most *Object Oriented Programming* features:
