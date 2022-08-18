@@ -32,7 +32,7 @@ Pour les applications simples et pour apprendre SwiftUI, nous pouvons utiliser l
 Il existe aussi un [playground web](https://swiftui-playground.kishikawakatsumi.com/) qui peut être exceptionnellement utilisé.
 Vous pouvez voir une capture d'écran de l'outil ci-dessous.
 
-![SwiftUI web playground](../assets/swftui-playground.png)
+![SwiftUI web playground](../../assets/swftui-playground.png)
 
 Une autre alternative prometteuse à surveiller est [le portage Windows créé par compnerd](https://github.com/compnerd/swift-win32) de UIKit et SwiftUI.
 Pour la suite, il est donc fortement recommandé d'utiliser Xcode.
