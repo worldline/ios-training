@@ -2,8 +2,10 @@
 home: true
 heroImage: /logo.png
 tagline: Débuter avec le développement iOS avec Swift et SwiftUI
-actionText: Commencer →
-actionLink: /fr/presentation/
+actions:
+  - text: Débuter →
+    link: /fr/presentation/
+    type: primary
 features:
   - title: Swift
     details: Découvrez le langage de programmation Switch.
@@ -11,6 +13,8 @@ features:
     details: Développer des applications iOS
 footer: Worldline, 2021
 ---
+
+# Bienvenue
 
 ::: tip
 This training is also available in [English](/) / Cette formation est aussi disponible en [Anglais](/)

@@ -46,7 +46,7 @@ The declaration of functions in Swift has the following peculiarities:
 - You can make a parameter anonymous by setting this external name: `_`.
 - Arguments can have a default value. These are also called optional arguments.
 
-[This code snippet](https://swiftfiddle.com/690a3e3bbe580f524f72358ccdb696da) illustrates the above features.
+[This code](https://swiftfiddle.com/690a3e3bbe580f524f72358ccdb696da) illustrates the above features.
 
 Swift allows to use functions as first class items or citizens.
 This allows to store function references into variables, pass functions as arguments to other functions and return a function from a function.
@@ -58,7 +58,7 @@ Here is a brief listing of the these features:
 - We can use `typealias` to shorten writing long types.
 - Swift supports anonymous functions (also called lambda function) with the following syntax `{ argName1, argName2, etc. in // code }`
 
-[This code snippet](https://swiftfiddle.com/5d6b837c869bf23615376bc4cc70bcd1) illustrates these features.
+[This code](https://swiftfiddle.com/5d6b837c869bf23615376bc4cc70bcd1) illustrates these features.
 
 Let's explore in the next section, one of the most amazing features of Swift which is *Optionals*.
 
@@ -87,7 +87,7 @@ On of the rarest exceptions is with Interface builder's Outlets in UIKit `@IBOut
 Fortunately, since we are not using UIKit in this training, we will avoid this situation.
 :::
 
-[This code snippet](https://swiftfiddle.com/fa7ad8713475c04666462236db939857) illustrates null safety and how to use optional types.
+[This code](https://swiftfiddle.com/fa7ad8713475c04666462236db939857) illustrates null safety and how to use optional types.
 
 ## Enumerations
 
@@ -99,7 +99,7 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 - You can associate values or provide a raw value to enumeration cases. Raw values can be implicitly assigned.
 - You can use another enumeration as associated value, this is called *recursive enumeration*.
 
-[This code snippet](https://swiftfiddle.com/d508deb3493e9b572eaf00891c91d8f0) illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
+[This code](https://swiftfiddle.com/d508deb3493e9b572eaf00891c91d8f0) illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
 
 ## Exercises
 
