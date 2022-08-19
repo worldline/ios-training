@@ -4,9 +4,11 @@
 1/2 day
 :::
 
-There are two official UI frameworks provided by Apple: UIKit and SwiftUI.
+Apple provides two official UI frameworks : UIKit and SwiftUI.
 
-UIKit is the originally used framework for UI development. It relies on defining the UI in a separate file (storyboard or xib) and the behavior in a swift file. In 2019, Apple release the first version of SwiftUI. 
+UIKit is the originally used framework for UI development.
+It relies on defining the UI in a separate file (storyboard or xib) and the behavior in a swift file.
+In 2019, Apple release the first version of SwiftUI.
 
 The remainder of this training focuses on SwiftUI.
 
@@ -35,7 +37,7 @@ You can see a screenshot of the tool below.
 Another promising alternative to watch is [compnerd's windows port](https://github.com/compnerd/swift-win32) of UIKit and SwiftUI.
 So, if you can have a recent version Xcode running, this is be the best IDE for SwiftUI development.
 
-## Anatomy of a simple view
+## Anatomy of a basic view
 
 The following code shows a sample view.
 
@@ -64,7 +66,7 @@ struct ContentView: View {
 }
 ```
 
-As noted earlier, it is a struct that conforms to the view protocol.
+As noted earlier, SwiftUI views are structs that conforms to the View protocol.
 This protocol defined a computed property that returns a View as an opaque type.
 
 The body of the view has a `VStack` as its root element.
@@ -102,7 +104,7 @@ Let's do more SwiftUI.
 
 Apple provides a [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftui) that covers most of the basic use cases such as creating views and handling inputs, animations and transitions.
 
-You can start the tutorial by clicking on "Get started". 
+You can start the tutorial by clicking on "Get started".
 
 ![swiftui get started](../assets/swift-ui-tuto-start.png)
 

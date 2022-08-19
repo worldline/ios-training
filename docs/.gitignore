@@ -26,3 +26,5 @@ node_modules/
 
 # Typescript build info
 *.tsbuildinfo
+
+vale-styles/
