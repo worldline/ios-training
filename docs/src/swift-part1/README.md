@@ -27,7 +27,7 @@ Swift has modern and interesting features. Here are some notable ones:
 - Interfaces are called protocols and they are used a lot.
 - Structures are available and provide a lot of features (More on that later).
 
-[This code snippet](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustrates some of the features listed above.
+[this code](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustrates some of the features listed above.
 
 In the following sections, we will delve into more features.
 

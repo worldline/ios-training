@@ -29,7 +29,7 @@ Here are some features additional interesting features:
   - They can define default implementations in protocols.
 - Abstract classes are not available
 
-[This code snippet](https://swiftfiddle.com/05f4d4d3c8235299a875e08dcb3992f8) illustrates some of the above features.
+[this code](https://swiftfiddle.com/05f4d4d3c8235299a875e08dcb3992f8) illustrates some of the above features.
 
 In additions to classes, structs in swift are very powerful and provide similar features than classes with some exceptions.
 
@@ -44,7 +44,7 @@ The features that are only available in classes [are as follows](https://docs.sw
 - Deinitializers.
 - Reference counting allows more than one reference to a class instance (similar to pointers but much less complex to use).
 
-[This code snippet](https://swiftfiddle.com/d72ea73dcbae5cc25908c56bdabcf877) sample shows how to use structs with protocols.
+[this code](https://swiftfiddle.com/d72ea73dcbae5cc25908c56bdabcf877) sample shows how to use structs with protocols.
 
 ## Opaque types
 
@@ -122,7 +122,7 @@ Declarative programing is possible in Swift through chaining functions and passi
 Indeed, as we have seen earlier, Swift has 1st class support for functions.
 In addition to that, we can find declarative APIs in the standard Swift library and in Swift UI.
 The latter will be explored in a different chapter.
-For now, let's illustrate [with this code snippet](https://swiftfiddle.com/4cebea7bfea3d58600df30f1af325663) how to process a list of strings using only declarative APIs provided by Swift.
+For now, let's illustrate [with this code](https://swiftfiddle.com/4cebea7bfea3d58600df30f1af325663) how to process a list of strings using only declarative APIs provided by Swift.
 
 Swift has many more features and provides a rich standard library.
 We'll explore them as needed in the next sections.
