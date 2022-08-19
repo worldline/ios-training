@@ -19,8 +19,8 @@ module.exports = {
     },
   },
   head: [
-    ["link", { rel: "image/x-icon", href: "favicon.ico" }],
-    ["link", { rel: "manifest", href: "manifest.webmanifest" }],
+    ["link", { rel: "icon", href: "/ios-training/favicon.ico" }],
+    ["link", { rel: "manifest", href: "/ios-training/manifest.webmanifest" }],
     ["meta", { name: "theme-color", content: "#2176d6" }],
   ],
   theme: defaultTheme({
