@@ -72,16 +72,4 @@ module.exports = {
     nprogressPlugin(),
     pwaPlugin({}),
   ],
-  markdown: {
-    extendMarkdown: (md) => {
-      // use more markdown-it plugins!
-      md.use(require("markdown-it-video-ext"));
-      console.log("hello");
-    },
-  },
-  extendMarkdown: (md) => {
-    // use more markdown-it plugins!
-    md.use(require("markdown-it-video-ext"));
-    console.log("hello");
-  },
 };
