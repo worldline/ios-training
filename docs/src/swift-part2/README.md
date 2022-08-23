@@ -22,7 +22,7 @@ Swift supports most *Object Oriented Programming* features:
   - Protocols can have [associated types](https://www.hackingwithswift.com/articles/74/understanding-protocol-associated-types-and-their-constraints) which is similar to generic types.
   - They are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
 
-Here are some features additional interesting features: 
+Here are some additional features: 
 
 - Extensions allow to add functions and conform to additional protocols outside of the original class, struct or protocol declaration. This has many uses that simplify our code and here are some examples.
   - They can add methods to classes from any library that we can use.
@@ -31,7 +31,7 @@ Here are some features additional interesting features:
 
 [this code](https://swiftfiddle.com/05f4d4d3c8235299a875e08dcb3992f8) illustrates some of the above features.
 
-In additions to classes, structs in swift are very powerful and provide similar features than classes with some exceptions.
+In additions to classes, structs in swift are powerful and provide similar features than classes with some exceptions.
 
 ## Structs
 
