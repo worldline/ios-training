@@ -23,7 +23,7 @@ This training is also available in [French](/fr/) / Cette formation est aussi di
 ## Prerequisites
 
 - Basic knowledge of programming
-- Prepare your dev environment and install stuff before the session (see [Tooling section](tooling))
+- Dev environment: macOS and Xcode
 
 ## Useful links
 

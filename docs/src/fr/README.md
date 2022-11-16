@@ -20,10 +20,10 @@ footer: Worldline, 2021
 This training is also available in [English](/) / Cette formation est aussi disponible en [Anglais](/)
 :::
 
-## Prérequis
+## Pré-requis
 
 - Connaissances de base en programmation
-- Préparez votre environnement de développement et installez des éléments avant la session (voir la section [Outillage](outillage))
+- Environnement de développement: macOS et Xcode
 
 ## Liens utiles
 
