@@ -65,7 +65,7 @@ Nous allons montrer ci-dessous un cas d'utilisation simple qui est rendu possibl
 // Source : https://www.educative.io/answers/what-is-opaque-type-in-swift
 
 // Créez une fonction qui renvoie un Equatable.
-// Le compilateur échoue si le type de retour est "Equatable".
+// La compilation échoue si on enlève some
 func makeInteger() -> some Equatable{ 
   Int.random(in : 0...10)
 } 
@@ -82,7 +82,7 @@ func makeString() -> some Equatable{
 let firstString = makeString()
 
 // Erreur de compilation car le type concret n'est pas le même.
-print(premierInteger == premierString) 
+//print(firstInteger == firstString) 
 ```
 
 Depuis Swift 5.1, les types opaques ne sont disponibles que [pour les valeurs de retour](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md).
