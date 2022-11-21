@@ -32,7 +32,7 @@ En voici quelques-unes :
 
 Dans les sections suivantes, nous allons approfondir d'autres fonctionnalités.
 
-::: les opérateurs ++ et -- sont supprimés depuis swift 3
+::: warning les opérateurs ++ et -- sont supprimés depuis swift 3
 [Ce post](https://github.com/apple/swift-evolution/blob/master/proposals/0004-remove-pre-post-inc-decrement.md) détaille tous les problèmes liés à l'utilisation de ces opérateurs.
 :::
 
@@ -99,6 +99,10 @@ Les énumérations permettent de travailler avec un groupe de valeurs de manièr
 - Vous pouvez facilement itérer sur les valeurs d'une énumération en utilisant ` : CaseIterable`.
 - Vous pouvez associer des valeurs ou fournir une valeur brute aux cas d'énumération. Les valeurs brutes peuvent être implicitement assignées.
 - Vous pouvez utiliser une autre énumération comme valeur associée, ceci est appelé *énumération récursive*.
+
+::: warning Types associés != valeurs associées
+Swift propose aussi le concept de types associés pour les protocoles qui est à ne pas confondre avec les valeurs associées des énumérations.
+:::
 
 [Ce code](https://swiftfiddle.com/d508deb3493e9b572eaf00891c91d8f0) illustre certaines caractéristiques des énumérations. Pour plus d'informations, veuillez consulter [la documentation officielle](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
 
