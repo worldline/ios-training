@@ -1,6 +1,6 @@
 # Persistance locale des données
 
-::: conseil Temps estimé
+::: tip Temps estimé
 1/4 journée
 :::
 

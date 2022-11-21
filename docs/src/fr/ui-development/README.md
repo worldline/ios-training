@@ -49,16 +49,16 @@ struct ContentView : View {
                 .font(.largeTitle)
                 .foregroundColor(.blue)
                 .padding()
-            Bouton(action : {}) {
+            Button(action : {}) {
                 HStack {
                     Image(systemName : "suit.heart.fill")
-                        .foregroundColor(.rouge)
+                        .foregroundColor(.red)
                     Text("Je suis un bouton")
                         .font(.headline)
                         .foregroundColor(.white)
                 }
                 .padding(12)
-                .background(Couleur.orange)
+                .background(Color.orange)
                 .cornerRadius(8)
             }
         }
