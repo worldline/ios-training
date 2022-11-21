@@ -29,7 +29,7 @@ Suite à cela, Apple a annoncé lors de la WWDC suivante SwiftUI comme le rempla
 
 ![swiftui](../../assets/swiftui-framework-wwdc.jpg)
 
-A partir de 2021, la majorité des nouveaux projets iOS utilisent Swift et SwiftUI avec UIKit comme solution de repli pour les aspects UI.
+À partir de 2021, la majorité des nouveaux projets iOS utilisent Swift et SwiftUI avec UIKit comme solution de repli pour les aspects UI.
 
 ## Liens et références
 
