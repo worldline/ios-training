@@ -112,8 +112,29 @@ Vous pouvez également naviguer entre les différents tutoriels en utilisant la 
 
 ## Un résumé des concepts importants
 
-- État : 
-- Liaison
-- EnvironnementObjet
-- Observable
+- `@State`: Propriété simple qui met à jour la vue lorsqu'elle est modifiée. C'est une sorte de source de vérité.
 
+```swift
+struct PlayButton: View {
+    @State private var isPlaying: Bool = false
+
+    var body: some View {
+        // Le titre du bouton va changer selon la valeur de isPlaying
+        Button(isPlaying ? "Pause" : "Play") {
+            isPlaying.toggle()
+        }
+    }
+}
+```
+
+- `@Binding`: Permet de récupérer une `@State` d'une autre vue.
+  - [SwiftUI – @State vs @Binding](https://stackoverflow.com/a/59247591)
+  - [Exemple](https://developer.apple.com/documentation/swiftui/binding)
+- `ObservableObject` et `@ObservedObject`: Utilisés en tandem, permettent de définir des valeurs qui mettent à jour l'interface graphique à la modification. Permettent de gérer des cas plus complexes que State.
+- `@StateObject`: Permet de gérer un `@State` complexe
+- `@EnvironnementObjet`: Un state complexe partagé dans l'application
+
+## Liens et références
+
+- [@StateObject vs. @ObservedObject: The differences explained](https://www.avanderlee.com/swiftui/stateobject-observedobject-differences/)
+- [What’s the difference between @ObservedObject, @State, and @EnvironmentObject?](https://www.hackingwithswift.com/quick-start/swiftui/whats-the-difference-between-observedobject-state-and-environmentobject)
