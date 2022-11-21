@@ -146,8 +146,8 @@ Pour l'instant, créons quelques interfaces utilisateur dans le prochain chapitr
 [Solution](https://swiftfiddle.com/a1227e17989ad80da5137a31aa6dfbeb)
 :::
 
-### Sources et autres lectures
+## Sources et autres lectures
 
-- Documentation officielle de Swift](https://docs.swift.org).
+- [Documentation officielle de Swift](https://docs.swift.org).
 - [Comprendre les types opaques dans Swift](https://tanaschita.com/20220206-understanding-opaque-types-in-swift/).
 - [Swift evolution Opaque Result Types](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md)
