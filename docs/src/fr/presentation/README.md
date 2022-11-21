@@ -19,7 +19,7 @@ En outre, il est également possible d'exploiter le langage Swift (sans SwiftUI)
 
 ## Historique
 
-Les premiers jours du développement d'iOS utilisaient le langage Objective-C, le framework UIKit UI et le bon vieux Xcode.
+Les premiers jours du développement d'iOS utilisaient le langage Objective-C, le framework UIKit et le bon vieux Xcode.
 Cet écosystème était basique mais assez puissant et permettait de développer des applications de qualité.
 Les mises à jour continues d'Apple ont amélioré l'expérience des développeurs.
 Par exemple, la gestion de la mémoire est devenue automatique (grâce à ARC) et il est devenu possible de développer des vues qui s'adaptent aux différentes tailles d'écran.

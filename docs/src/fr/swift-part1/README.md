@@ -43,7 +43,7 @@ Dans cette section, les termes "argument" et "paramètre" sont utilisés de mani
 La déclaration des fonctions en Swift présente les particularités suivantes :
 
 - Les paramètres sont nommés et ordonnés. Cela signifie que lorsque vous appelez une fonction, vous devez spécifier le nom des arguments dans le même ordre que la déclaration.
-- Un paramètre peut avoir des noms externes et internes différents en le déclarant comme suit : `Nom Externe Nom Interne Nom : Type`. Le nom externe est également appelé libellé.
+- Un paramètre peut avoir des noms externes et internes différents en le déclarant comme suit : `Nom_Externe Nom_Interne : Type`. Le nom externe est également appelé libellé.
 - Vous pouvez rendre un paramètre anonyme en définissant `_` comme nom externe.
 - Les arguments peuvent avoir une valeur par défaut. Ils sont également appelés arguments optionnels.
 
