@@ -106,7 +106,7 @@ Nous parlerons de la programmation fonctionnelle dans la section suivante.
 
 ## Caractéristiques de la programmation fonctionnelle
 
-La programmation fonctionnelle s'articule autour de [trois concepts principaux](https://flexiple.com/ios/introduction-to-functional-programming-using-swift/) : les fonctions pures, les variables immuables et la programmation déclarative.
+La programmation fonctionnelle s'articule autour de [quatre concepts principaux](https://flexiple.com/ios/introduction-to-functional-programming-using-swift/) : fonctions comme éléments de première classe, les fonctions pures, les variables immuables et la programmation déclarative.
 
 Les fonctions pures sont des fonctions qui n'ont pas d'effets secondaires et qui renverront donc toujours la même sortie étant donné la même entrée.
 Swift permet de créer des fonctions pures mais ne garantit pas à la compilation qu'une fonction est pure.
