@@ -131,7 +131,7 @@ struct PlayButton: View {
   - [SwiftUI – @State vs @Binding](https://stackoverflow.com/a/59247591)
   - [Exemple](https://developer.apple.com/documentation/swiftui/binding)
 - `ObservableObject` et `@ObservedObject`: Utilisés en tandem, permettent de définir des valeurs qui mettent à jour l'interface graphique à la modification. Permettent de gérer des cas plus complexes que State.
-- `@StateObject`: Permet de gérer un `@State` complexe
+- `@StateObject`: Permet de gérer un `@State` complexe.
 - `@EnvironnementObjet`: Un state complexe partagé dans l'application
 
 ## Liens et références
