@@ -7,7 +7,9 @@ struct ContentView: View {
     var body: some View {
         if isLoading {
             ProgressView().task {
-                await loadData(items: results)
+                if let response: Response  = try? await loadData() {
+                    results = response.results
+                }
                 try? await Task.sleep(nanoseconds: 1_000_000_000)
                 isLoading = false
             }
@@ -23,18 +25,15 @@ struct ContentView: View {
     }
 }
 
-func loadData() async -> [Result] {
+enum MyError: Error {
+    case UrlError
+}
+func loadData<T: Decodable>() async throws -> T  {
     guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
         print("Invalid URL")
-        return []
+        throw MyError.UrlError
     }
-    
-    do {
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let decodedResponse = try JSONDecoder().decode(Response.self, from: data)
-        return decodedResponse.results
-    } catch {
-        print("Invalid data")
-    }
-    return []
+    let (data, _) = try await URLSession.shared.data(from: url)
+    let decodedResponse = try JSONDecoder().decode(T.self, from: data)
+    return decodedResponse
 }
