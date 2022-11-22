@@ -1,19 +1,34 @@
 import SwiftUI
 
+enum ContentViewState {
+    case loading
+    case fail(String)
+    case sucess([Result])
+}
+
 struct ContentView: View {
-    @State private var results = [Result]()
-    @State private var isLoading = true
+    @State private var currentState = ContentViewState.loading
+    static var forceFail: Bool = true
     
     var body: some View {
-        if isLoading {
+        switch currentState {
+        case .loading:
             ProgressView().task {
-                if let response: Response  = try? await loadData() {
-                    results = response.results
-                }
                 try? await Task.sleep(nanoseconds: 1_000_000_000)
-                isLoading = false
+                if let response: Response  = try? await loadData() {
+                    currentState = .sucess(response.results)
+                } else {
+                    currentState = .fail("Failed to load the data")
+                }
             }
-        } else {
+        case .fail(let errorMessage):
+            VStack {
+                Text(errorMessage).foregroundColor(.red)
+                Button("Reload") {
+                    currentState = .loading
+                }
+            }
+        case .sucess(let results):
             List(results, id: \.trackId) { item in
                 VStack(alignment: .leading) {
                     Text(item.trackName)
@@ -29,8 +44,10 @@ enum MyError: Error {
     case UrlError
 }
 func loadData<T: Decodable>() async throws -> T  {
-    guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
-        print("Invalid URL")
+    let urlString = ContentView.forceFail ? "" : "https://itunes.apple.com/search?term=taylor+swift&entity=song"
+    ContentView.forceFail = false
+    guard let url = URL(string: urlString) else {
+        print("Invalid URL", urlString)
         throw MyError.UrlError
     }
     let (data, _) = try await URLSession.shared.data(from: url)
