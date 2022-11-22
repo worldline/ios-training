@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum ContentViewState {
+enum ContentViewState: Equatable {
     case loading
     case fail(String)
     case sucess([Result])
@@ -11,32 +11,34 @@ struct ContentView: View {
     static var forceFail: Bool = true
     
     var body: some View {
-        switch currentState {
-        case .loading:
-            ProgressView().task {
-                try? await Task.sleep(nanoseconds: 1_000_000_000)
-                if let response: Response  = try? await loadData() {
-                    currentState = .sucess(response.results)
-                } else {
-                    currentState = .fail("Failed to load the data")
+        ZStack {
+            switch currentState {
+            case .loading:
+                ProgressView().task {
+                    try? await Task.sleep(nanoseconds: 1_000_000_000)
+                    if let response: Response  = try? await loadData() {
+                        currentState = .sucess(response.results)
+                    } else {
+                        currentState = .fail("Failed to load the data")
+                    }
+                }
+            case .fail(let errorMessage):
+                VStack {
+                    Text(errorMessage).foregroundColor(.red)
+                    Button("Reload") {
+                        currentState = .loading
+                    }
+                }
+            case .sucess(let results):
+                List(results, id: \.trackId) { item in
+                    VStack(alignment: .leading) {
+                        Text(item.trackName)
+                            .font(.headline)
+                        Text(item.collectionName)
+                    }
                 }
             }
-        case .fail(let errorMessage):
-            VStack {
-                Text(errorMessage).foregroundColor(.red)
-                Button("Reload") {
-                    currentState = .loading
-                }
-            }
-        case .sucess(let results):
-            List(results, id: \.trackId) { item in
-                VStack(alignment: .leading) {
-                    Text(item.trackName)
-                        .font(.headline)
-                    Text(item.collectionName)
-                }
-            }
-        }
+        }.animation(.default, value: currentState)
     }
 }
 
