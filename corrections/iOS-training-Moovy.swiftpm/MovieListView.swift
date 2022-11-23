@@ -42,6 +42,7 @@ struct MovieListView: View {
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.setValue("Bearer \(userResponse.token)", forHTTPHeaderField: "Authorization")
+        
         do {
             let (data, _) = try await URLSession.shared.data(for: request)
             print(String(decoding: data, as: UTF8.self))
@@ -49,12 +50,5 @@ struct MovieListView: View {
         } catch {
             movieListState = .failure
         }
-    }
-}
-
-struct MovieRowView: View {
-    let movie: Movie
-    var body: some View {
-        Text("Movie \(movie.title)")
     }
 }

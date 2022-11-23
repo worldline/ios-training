@@ -76,8 +76,8 @@ struct LoginView: View {
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.httpMethod = "POST"
         
-        let (data, _) = try await URLSession.shared.upload(for: request,from: requestBody)
-        print(String(decoding: data, as: UTF8.self))
+        let (data, response) = try await URLSession.shared.upload(for: request,from: requestBody)
+        print("response code", (response as? HTTPURLResponse)?.statusCode ?? -1, "response data", String(decoding: data, as: UTF8.self))
         return try JSONDecoder().decode(UserResponse.self, from: data)
     }
 }
