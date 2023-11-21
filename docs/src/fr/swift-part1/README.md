@@ -28,7 +28,7 @@ En voici quelques-unes :
 - Les interfaces sont appelées protocoles et sont très utilisées.
 - Les structures sont disponibles et offrent de nombreuses fonctionnalités (nous y reviendrons plus tard).
 
-[Cet extrait de code](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustre certaines des caractéristiques énumérées ci-dessus.
+[Cet extrait de code](https://swiftfiddle.com/lupxhfuqjrdknpibphp6htt54a) illustre certaines des caractéristiques énumérées ci-dessus.
 
 Dans les sections suivantes, nous allons approfondir d'autres fonctionnalités.
 
@@ -82,7 +82,7 @@ En Swift, la valeur nulle est appelée `nil`.
   - Forcer le déballage de l'optionnel en utilisant le suffixe *!*. Cette méthode ne devrait jamais être utilisée car elle contourne les contrôles du compilateur.
 
 ::: danger Ne jamais déballer avec !
-Vous ne devez jamais forcer le déballage avec le suffixe *!*. 
+Vous ne devez jamais forcer le déballage avec le suffixe *!*.
 Utilisez plutôt d'autres techniques de déballage.
 L'une des exceptions les plus rares concerne les IBOutlet d'Interface Builder `@IBOutlet var label : UILabel!`.
 Heureusement, ce cas concerne UIKit, nous éviterons cette situation dans la formation car nous seons sur du SwiftUI.
@@ -96,7 +96,7 @@ Les énumérations permettent de travailler avec un groupe de valeurs de manièr
 
 - Lorsque le compilateur peut le déduire, vous pouvez omettre le nom de l'énumération lorsque vous utilisez une de ses valeurs.
 - Les instructions Switch supportent les énumérations.
-- Vous pouvez facilement itérer sur les valeurs d'une énumération en utilisant ` : CaseIterable`.
+- Vous pouvez facilement itérer sur les valeurs d'une énumération en utilisant `: CaseIterable`.
 - Vous pouvez associer des valeurs ou fournir une valeur brute aux cas d'énumération. Les valeurs brutes peuvent être implicitement assignées.
 - Vous pouvez utiliser une autre énumération comme valeur associée, ceci est appelé *énumération récursive*.
 

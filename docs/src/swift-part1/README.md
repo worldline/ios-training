@@ -23,11 +23,11 @@ Swift has modern and interesting features. Here are some notable ones:
 - for-each is the only type of for loop available.
 - *Optionals* allows to write code free from null pointer errors (also called Null Safety in other languages).
 - Functional programming is supported (Higher-order functions and functions as 1st class items, etc.).
-- Object oriented programming is supported. 
+- Object oriented programming is supported.
 - Interfaces are called protocols and they are used a lot.
 - Structures are available and provide a lot of features (More on that later).
 
-[this code](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustrates some of the features listed above.
+[this code](https://swiftfiddle.com/lupxhfuqjrdknpibphp6htt54a) illustrates some of the features listed above.
 
 In the following sections, we will delve into more features.
 
@@ -81,7 +81,7 @@ In Swift, the null value is called `nil`
   - Force unwrap the optional using the *!* suffix. This should never be used as it bypasses compiler checks.
 
 ::: danger Never unwrap with !
-You must never force unwrap with the *!*. 
+You must never force unwrap with the *!*.
 Use other unwrapping techniques instead.
 On of the rarest exceptions is with Interface builder's Outlets in UIKit `@IBOutlet var label: UILabel!`.
 Fortunately, since we are not using UIKit in this training, we will avoid this situation.
