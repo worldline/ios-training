@@ -20,6 +20,7 @@ Swift has modern and interesting features. Here are some notable ones:
 - `let` creates immutable variables or constants.
 - String interpolation is available with this syntax `\(expression)`.
 - Parenthesis are not required in `if`, `for`, `while` and `switch` statements.
+- `if` and `switch` statements are expressions.
 - for-each is the only type of for loop available.
 - *Optionals* allows to write code free from null pointer errors (also called Null Safety in other languages).
 - Functional programming is supported (Higher-order functions and functions as 1st class items, etc.).
@@ -27,7 +28,7 @@ Swift has modern and interesting features. Here are some notable ones:
 - Interfaces are called protocols and they are used a lot.
 - Structures are available and provide a lot of features (More on that later).
 
-[this code](https://swiftfiddle.com/lupxhfuqjrdknpibphp6htt54a) illustrates some of the features listed above.
+[this code](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustrates some of the features listed above.
 
 In the following sections, we will delve into more features.
 
@@ -37,7 +38,7 @@ In the following sections, we will delve into more features.
 
 ## Functions
 
-In the this section, the terms 'argument' and 'parameter' are used interchangeably.
+In the this section, the terms *argument* and *parameter* are used interchangeably.
 
 The declaration of functions in Swift has the following peculiarities:
 
@@ -101,6 +102,23 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 
 [This code](https://swiftfiddle.com/d508deb3493e9b572eaf00891c91d8f0) illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
 
+## Error management
+
+Swift provides two ways for error management: *Exceptions* and the *Result* type.
+
+- Exceptions provide an alternate return route with the `throw [value]` keyword.
+  - The thrown value must conform the `Error` protocol. We can even throw a [String](https://www.hackingwithswift.com/example-code/language/how-to-throw-errors-using-strings) that way.
+  - We must call `throw` when we want to return an error. Throwing in a normal situation is a bad practice.
+  - We say that a function *throws* when it can `throw` and exception. It must have the `throws` qualifier.
+  - When we call a function that throws, we must precede the call with `try` keyword
+  - When we call a function that throws, we can either propagate its error if it is thrown or handle to stop its propagation.
+- The `Result` type is a an enum that has two possible cases: `success(Sucess)` or `failure(Failure)`
+  - The failure value must conform to the `Error` protocol
+  - A `Result` can be handled with usual Swift features for enums: `guard`, `switch`, etc.
+  - The `Result` type has can be used with the exception style. Its `get()` method returns the success value or throws the error.
+
+[This code](https://swiftfiddle.com/84b40a652f2b31c0b9cd1e0b37b15ca0) illustrates error handling features.
+
 ## Exercises
 
 ### Exercise 1
@@ -118,6 +136,10 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 ::: details Please open to see the solution(s)
 [Solution](https://swiftfiddle.com/1bb9a747f719e0f35ca470c079a1e453)
 :::
+
+### Exercise 3
+
+[Please click on this link to view the exercise](https://swiftfiddle.com/2a603ce22c3edc9a2bc0cee8bb65885d)
 
 ## Sources
 

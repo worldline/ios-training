@@ -12,7 +12,7 @@ Swift supports most *Object Oriented Programming* features:
   - Constructors and destructors are called initializers and deinitializers respectively.
 - Encapsulation and [4 access levels](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) that range from private to public
 - Simple inheritance of classes. Multiple inheritance of classes and is not supported.
- -  Inheritance allows one class to use the characteristics of another.
+- Inheritance allows one class to use the characteristics of another.
 - Method overriding and [polymorphism](https://levelup.gitconnected.com/polymorphism-in-swift) and access control.
 - Overloading of operators and functions, [composition](https://www.avanderlee.com/swift/composition-inheritance-code-architecture/).
 - Static methods and properties are supported.
@@ -22,7 +22,7 @@ Swift supports most *Object Oriented Programming* features:
   - Protocols can have [associated types](https://www.hackingwithswift.com/articles/74/understanding-protocol-associated-types-and-their-constraints) which is similar to generic types.
   - They are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
 
-Here are some additional features: 
+Here are some additional features:
 
 - Extensions allow to add functions and conform to additional protocols outside of the original class, struct or protocol declaration. This has many uses that simplify our code and here are some examples.
   - They can add methods to classes from any library that we can use.

@@ -8,7 +8,7 @@ actions:
     type: primary
 features:
   - title: Swift
-    details: Discover the swift programming language
+    details: Discover the Swift programming language (version 5.9)
   - title: SwiftUI
     details: Develop iOS applications
 footer: Worldline, 2021

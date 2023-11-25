@@ -28,7 +28,7 @@ En voici quelques-unes :
 - Les interfaces sont appelées protocoles et sont très utilisées.
 - Les structures sont disponibles et offrent de nombreuses fonctionnalités (nous y reviendrons plus tard).
 
-[Cet extrait de code](https://swiftfiddle.com/lupxhfuqjrdknpibphp6htt54a) illustre certaines des caractéristiques énumérées ci-dessus.
+[Cet extrait de code](https://swiftfiddle.com/2382a3b3fdc54631140f51bae116dc74) illustre certaines des caractéristiques énumérées ci-dessus.
 
 Dans les sections suivantes, nous allons approfondir d'autres fonctionnalités.
 
