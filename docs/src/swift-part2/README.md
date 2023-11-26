@@ -194,7 +194,7 @@ Task {
 
 ### Exercise 3
 
-[Please click on this link to view the exercise](https://swiftfiddle.com/)
+[Please click on this link to view the exercise](https://swiftfiddle.com/d225e7e3b061035b6a1987c3cf2fb3d5)
 
 ::: details Please open to see the solution(s)
 [Solution](https://swiftfiddle.com/)
