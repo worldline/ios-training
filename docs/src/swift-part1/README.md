@@ -119,6 +119,11 @@ Swift provides two ways for error management: *Exceptions* and the *Result* type
 
 [This code](https://swiftfiddle.com/84b40a652f2b31c0b9cd1e0b37b15ca0) illustrates error handling features.
 
+## Some features in bulk
+
+- Swift has 3 collection types out of the box: Array, Dictionary and Set. They are illustrated in [this code](https://swiftfiddle.com/78907b9238bd580e90c9f4b3732e26be)
+- We can use tuples in Swift as shown in [this example](https://swiftfiddle.com/507224875d91da9c6257e2e86533b360)
+
 ## Exercises
 
 ### Exercise 1
