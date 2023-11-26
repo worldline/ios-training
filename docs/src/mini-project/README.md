@@ -12,7 +12,7 @@ The app consists of a movie explorer app with the following features:
 - The app allows a new user to register.
 - The movie list screen allows to logout from the app.
 - The app remembers the logged in user after a restart.
-- The app uses [this API](https://vue-js-backend.herokuapp.com/api-docs/#/) for the authenticating and searching for movies.
+- The app uses [this API](https://movie-api-ybwl.koyeb.app/api-docs/) for the authenticating and searching for movies.
   - The **/movies/search** endpoint requires to pass the token retrieved from endpoint **/user/login** or **user/register** in this header: `Authorization: Bearer \(userResponse.token)`
 - (Optional) The result of previous queries is locally cached.
 - (Optional) Animate the transition between the login view and the movie list view ([tutorial](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-and-remove-views-with-a-transition)).
@@ -32,7 +32,7 @@ A preview of the app can be seen here.
 
 - There are many techniques to handle the flow from the login view to the movie list view.
 On of them is to rely on a logged state.
-The following gives an overview how it looks like. 
+The following gives an overview how it looks like.
 
 ```swift
 struct ContentView: View {
@@ -76,13 +76,13 @@ Button("Login") {
 }
 ```
 
-::: danger Swift Concurrency crashes on Swift Playground 
+::: danger Swift Concurrency crashes on Swift Playground
 Do not use the Swift Playground app to run you app as it does not work well with SwiftUI + Swift Concurrency (async, await and Task).
 Instead, you can create an Xcode project of type Playground to combine the power of Xcode and the simplicity of Playground projects.
 :::
 
 - Use [DebouncedOnChange](https://github.com/Tunous/DebouncedOnChange) Swift package to optimize search.
-- To generate the initial code for a preview, open a view and then use the Xcode feature *Editor -> Create preview* 
+- To generate the initial code for a preview, open a view and then use the Xcode feature *Editor -> Create preview*
 - The List view requires that you specify an `id` field `List(movies, id: \.title)` or that the items conform to Identifiable protocol
 - If you can't add SwiftPM packages from Xcode, add them by editing the *package.swift* file by hand.
 Here is an example below.
