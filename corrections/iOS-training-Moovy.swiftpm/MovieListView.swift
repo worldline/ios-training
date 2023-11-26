@@ -35,7 +35,7 @@ struct MovieListView: View {
     }
     
     func searchMovies(query: String) async{
-        guard let url = URL(string: "https://vue-js-backend.herokuapp.com/movies/search?title=\(query)") else {
+        guard let url = URL(string: "\(BASE_API_URL)/movies/search?title=\(query)") else {
             movieListState = .failure
             return
         }

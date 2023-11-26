@@ -67,7 +67,7 @@ struct LoginView: View {
     }
     
     func callServer(_ path: String, requestBody: Data) async throws -> UserResponse? {
-        guard let url = URL(string: "https://vue-js-backend.herokuapp.com/\(path)") else {
+        guard let url = URL(string: "\(BASE_API_URL)/\(path)") else {
             loginState = .failure
             return nil
         }

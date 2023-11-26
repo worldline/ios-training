@@ -10,7 +10,8 @@ import AppleProductTypes
 let package = Package(
     name: "Moovy",
     platforms: [
-        .iOS("15.2")
+        .iOS("15.2"),
+        .macOS("13.0")
     ],
     products: [
         .iOSApplication(
@@ -30,12 +31,15 @@ let package = Package(
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
             ],
+            capabilities: [
+                .outgoingNetworkConnections()
+            ],
             appCategory: .entertainment
         )
     ],
     dependencies: [
         .package(url: "https://github.com/Tunous/DebouncedOnChange.git", "1.0.0"..<"2.0.0"),
-        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", "3.0.0"..<"4.0.0")
+        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", "4.0.0"..<"5.0.0")
     ],
     targets: [
         .executableTarget(
