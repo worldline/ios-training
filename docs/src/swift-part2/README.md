@@ -128,6 +128,56 @@ Swift has many more features and provides a rich standard library.
 We'll explore them as needed in the next sections.
 For now, let's create some UIs in the next chapter.
 
+## Structured Concurrency
+
+- Swift supports writing concurrent code in a structured way.
+- Concurrency means that we execute multiple **tasks** at the same time. For example, update the UI while the app performs an HTTP request to the server.
+- In Swift, we can create concurrent Tasks with the `Task`, `TaskGroup` types.
+- Without Structured concurrency, we would use complex concepts to such as callbacks which make code less readable (have you lived the [callback hell](https://swiftfiddle.com/ce6995e6f1cd9c0fb226df7995b546a5) ?).
+- We say that a code is [structured](https://oleb.net/2021/structured-concurrency) when we use the well-know control flow structures :if/then/else, loops, functions, lexical scopes for variables.
+  - Structured concurrency means that we write concurrent code using the usual control flow structures (as opposed to callback-based concurrent code)
+  - In Swift is possible through the `async` and `await` keywords.
+  - When we `await` a `Task`, the control flow will continue when it end without blocking the `Task` or `TaskGroup` on which it is launched.
+  - A function that has uses the `await` keyword must be declared as `async`
+- To summarize `async and await` + `Task` and `TaskGroup` = **Structured Concurrency**
+
+This swift script shows a sample of using [Task + async/await](https://swiftfiddle.com/c34b73f3b260192f63bd8159b9853986)
+
+This swift script shows a sample of using [TaskGoup + async/await](https://swiftfiddle.com/93183f842d0d02756b3e911e9ddc24b8)
+
+This swift script shows a sample of [TaskGoup cancellation](https://swiftfiddle.com/d5c9039422d60ce14f307623a3d9107e)
+
+::: tip Structured Concurrency in SwiftFiddle
+
+SwiftFiddle can run async code. [Here is a GitHub that explain the situation](https://github.com/SwiftFiddle/swiftfiddle-web/discussions/101)
+
+[Some more examples](https://async-await-in-swift.netlify.app/)
+
+:::
+
+::: tip Structured Concurrency in Playground Book
+
+```swift
+// Reference: https://stackoverflow.com/a/24066317
+import PlaygroundSupport
+
+//Playground does not stop at the end of the code
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+func sampleFunc() async {
+  print("sampleFunc")
+  try? await Task.sleep(until: .now + .seconds(2))
+}
+
+Task {
+    await sampleFunc()
+    print("done")
+    PlaygroundPage.current.finishExecution()
+}
+```
+
+:::
+
 ## Exercises
 
 ### Exercise 1
