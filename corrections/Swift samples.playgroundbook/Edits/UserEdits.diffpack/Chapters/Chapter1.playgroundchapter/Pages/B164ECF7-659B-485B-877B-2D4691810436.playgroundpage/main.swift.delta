@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import PlaygroundSupport
+
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+func runTaskGroupDemo() async {
+  await withTaskGroup(of: String.self) { taskGroup in
+    for i in 1...10 {
+      taskGroup.addTask {
+        print("Executing a long running function \(i)")
+        try? await Task.sleep(until: .now + .seconds(2))
+        // maybe just return and not guard in this case
+        guard !Task.isCancelled else {
+          return "cancelled after long task\(i)"
+        }
+        return "success \(i)"
+      }
+    }
+    // taskGroup provides an AsyncIterator
+    for await result in taskGroup {
+      print(result, terminator: " | ")
+    }
+    // This means that we have access to filter, map, reduce, etc.
+  }
+}
+
+Task {
+    await runTaskGroupDemo()
+    PlaygroundPage.current.finishExecution()
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 808}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

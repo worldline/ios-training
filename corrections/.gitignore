@@ -1,0 +1,61 @@
+*.py[co]
+*.sw?
+*~
+doc/build/*
+dist
+build
+cover
+ChangeLog
+.coverage
+*.egg
+*.egg-info
+.eggs/*
+.DS_Store
+.tox
+pycscope.*
+.idea
+MANIFEST
+
+.testrepository/*
+.stestr/*
+.noseids
+subunit.log
+test/probe/.noseids
+RELEASENOTES.rst
+releasenotes/notes/reno.cache
+/tools/playbooks/**/*.retry
+
+# Xcode
+#
+build/
+xcshareddata/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+# Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build

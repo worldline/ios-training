@@ -140,6 +140,7 @@ For now, let's create some UIs in the next chapter.
   - When we `await` a `Task`, the control flow will continue when it end without blocking the `Task` or `TaskGroup` on which it is launched.
   - A function that has uses the `await` keyword must be declared as `async`
 - To summarize `async and await` + `Task` and `TaskGroup` = **Structured Concurrency**
+- Continuations allow to convert callback code into async/await
 
 This swift script shows a sample of using [Task + async/await](https://swiftfiddle.com/c34b73f3b260192f63bd8159b9853986)
 
@@ -147,13 +148,7 @@ This swift script shows a sample of using [TaskGoup + async/await](https://swift
 
 This swift script shows a sample of [TaskGoup cancellation](https://swiftfiddle.com/d5c9039422d60ce14f307623a3d9107e)
 
-::: tip Structured Concurrency in SwiftFiddle
-
-SwiftFiddle can run async code. [Here is a GitHub that explain the situation](https://github.com/SwiftFiddle/swiftfiddle-web/discussions/101)
-
-[Some more examples](https://async-await-in-swift.netlify.app/)
-
-:::
+This swift script shows how to [convert callbacks into async/await](https://swiftfiddle.com/d62a161afcd623615a27fb09a8b2dc5c)
 
 ::: tip Structured Concurrency in Playground Book
 
@@ -172,6 +167,7 @@ func sampleFunc() async {
 Task {
     await sampleFunc()
     print("done")
+    // End the playground
     PlaygroundPage.current.finishExecution()
 }
 ```
@@ -196,8 +192,17 @@ Task {
 [Solution](https://swiftfiddle.com/a1227e17989ad80da5137a31aa6dfbeb)
 :::
 
+### Exercise 3
+
+[Please click on this link to view the exercise](https://swiftfiddle.com/)
+
+::: details Please open to see the solution(s)
+[Solution](https://swiftfiddle.com/)
+:::
+
 ## Sources and more reading
 
 - [Swift official documentation](https://docs.swift.org).
 - [Understanding opaque types in Swift](https://tanaschita.com/20220206-understanding-opaque-types-in-swift/)
 - [Swift evolution Opaque Result Types](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md)
+- [Some async examples on SwiftFiddle](https://async-await-in-swift.netlify.app/) and [how to use Runloop on SwiftFiddle](https://github.com/SwiftFiddle/swiftfiddle-web/discussions/101)

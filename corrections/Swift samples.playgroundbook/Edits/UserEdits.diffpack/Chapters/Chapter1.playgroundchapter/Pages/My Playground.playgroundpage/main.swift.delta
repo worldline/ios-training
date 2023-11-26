@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import PlaygroundSupport
+
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+func sampleFunc() async {
+    print("sampleFunc")
+    try? await Task.sleep(until: .now + .seconds(2))
+}
+
+Task {
+    await sampleFunc()
+    print("done")
+    PlaygroundPage.current.finishExecution()
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 283}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
