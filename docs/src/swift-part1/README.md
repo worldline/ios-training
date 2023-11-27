@@ -146,6 +146,10 @@ Swift provides two ways for error management: *Exceptions* and the *Result* type
 
 [Please click on this link to view the exercise](https://swiftfiddle.com/2a603ce22c3edc9a2bc0cee8bb65885d)
 
+::: details Please open to see the solution(s)
+[Solution](https://swiftfiddle.com/e3c6f484bffcc5945db5dd43ebc11c84)
+:::
+
 ## Sources
 
 - [Swift official documentation](https://docs.swift.org).
