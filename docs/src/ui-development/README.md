@@ -12,7 +12,7 @@ In 2019, Apple release the first version of SwiftUI.
 
 The remainder of this training focuses on SwiftUI.
 
-## SwiftUI 
+## SwiftUI
 
 SwiftUI brings a new approach to build UIs that we can summarize as follows:
 
@@ -114,8 +114,6 @@ You can also navigate between the different tutorials by using the top bar.
 
 ## A summary of important concepts
 
-- State: 
-- Binding
-- EnvironmentObject
-- Observable
-
+- `@State`: Single source of truth of a view and should not be shared with other views.
+- `@Binding`: allows to pass a reference of a state to a child view using `$state`.
+- `@EnvironmentObject`: Allows to globally share data between views. An `@EnvironmentObject` conforms to the `ObservableObject` protocol and its properties have the `@Published` property wrapper.
