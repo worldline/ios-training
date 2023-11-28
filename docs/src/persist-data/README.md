@@ -12,17 +12,17 @@ It can also be used to allow for offline app usage.
 ::: warning iOS isolates app data from other apps
 For security reasons, each app is isolated from the rest of the apps.
 This is called sandboxing.
-[This article](https://medium.com/@dinesh.kachhot/different-ways-to-share-data-between-apps-de75a0a46d4a) show the different ways that allow two or more apps to share their data
+[This article](https://medium.com/@dinesh.kachhot/different-ways-to-share-data-between-apps-de75a0a46d4a) shows the different ways that allow two or more apps to share their data
 :::
 
 There are many ways to persist data in SwiftUI that we cover below.
 
 ## UserDefaults
 
-It is a very simple key-value storage that persists data in a file. 
-The API surface is very small and the developer does not need to manage the persisted file. 
-This makes this technique very efficient for simple storage use cases. 
-You can find a short [guide here](https://www.hackingwithswift.com/books/ios-swiftui/storing-user-settings-with-userdefaults). 
+It is a very simple key-value storage that persists data in a file.
+The API surface is very small and the developer does not need to manage the persisted file.
+This makes this technique very efficient for simple storage use cases.
+You can find a short [guide here](https://www.hackingwithswift.com/books/ios-swiftui/storing-user-settings-with-userdefaults).
 
 Here is sample code that shows how to persist and load data.
 
@@ -31,9 +31,9 @@ UserDefaults.standard.set(self.tapCount, forKey: "Tap")
 @State private var tapCount = UserDefaults.standard.integer(forKey: "Tap")
 ```
 
-## Codable saved in a file
+## `Codable` saved in a file
 
-A more advanced and powerful technique is to manually load and persist a Codable into a file. 
+A more advanced and powerful technique is to manually load and persist a `Codable` into a file.
 This technique is useful if you want to store complex objects (such as the state or model) in a JSON file.
 There are two steps in this process, the first one consists of decoding / encoding the object from / into JSON using `JSONDecoder().decode` and `JSONEncoder().encode`.
 The second step consists of loading / saving the encoded data and we can think of two ways to achieve this.
@@ -49,7 +49,7 @@ The remainder of this section describes some of them.
 
 ::: warning Please be careful about the pricing of cloud storage
 Sophisticated databases generally provide cloud storage to provide a complete offer.
-If you're interested in storing data in the cloud, please take some time to read the pricing page to avoid any bad surprises when your app runs in produciton.
+If you're interested in storing data in the cloud, please take some time to read the pricing page to avoid any bad surprises when your app runs in production.
 :::
 
 ### Core Data
@@ -86,6 +86,6 @@ For example, we can *Firebase App Distribution* in Firebase, which is a service 
 
 ## PW: complete the official iOS persisting data tutorial
 
-This PW shows how to save a codable in a manually managed file using JSON encoder and filesystem APIs.
+This PW shows how to save a `Codable` in a manually managed file using JSON encoder and filesystem APIs.
 
 [https://developer.apple.com/tutorials/app-dev-training/persisting-data](https://developer.apple.com/tutorials/app-dev-training/persisting-data)

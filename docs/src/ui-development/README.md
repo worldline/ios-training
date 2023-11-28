@@ -106,11 +106,11 @@ Apple provides a [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftu
 
 You can start the tutorial by clicking on "Get started".
 
-![swiftui get started](../assets/swift-ui-tuto-start.png)
+![Swift UI get started](../assets/swift-ui-tuto-start.png)
 
 You can also navigate between the different tutorials by using the top bar.
 
-![navigate swiftui tutorial](../assets/swift-ui-tuto-navoigate.png)
+![navigate Swift UI tutorial](../assets/swift-ui-tuto-navoigate.png)
 
 ## A summary of important concepts
 
