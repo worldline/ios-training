@@ -16,14 +16,19 @@ struct User: Codable {
 
 func uploadData(request: URLRequest, requestBody: Data, completion: @escaping (_ isSuccessful: Bool) -> Void) {
     print("calling url", request)
-    let uploadTask = URLSession.shared.uploadTask(with: request, from: requestBody) { data, _, _ in
+    let uploadTask = URLSession.shared.uploadTask(with: request, from: requestBody) { data, response, _ in
         print("inside callback")
-        guard data != nil else {
-            print("no response body")
+        guard let response = response as? HTTPURLResponse else {
+            print("not HTTP response")
             completion(false)
             return
         }
-        print("got response body")
+        guard response.statusCode == 200 else {
+            print("Post failed")
+            completion(false)
+            return
+        }
+        print("Post success")
         completion(true)
     }
     uploadTask.resume()
@@ -38,7 +43,7 @@ func uploadDataAsync() async -> Bool {
     request.setValue("application/json", forHTTPHeaderField: "accept")
     request.httpMethod = "POST"
     
-    let user = User(email: "email@email.com", password: "password", firstname: "John", lastname: "Doe")
+    let user = User(email: "email131321@email.com", password: "password1232132132", firstname: "John", lastname: "Doe")
     guard let encoded = try? JSONEncoder().encode(user) else {
         return false
     }
