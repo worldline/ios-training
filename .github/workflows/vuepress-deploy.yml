@@ -4,14 +4,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: oven-sh/setup-bun@v1 # Setup bun
+        with:
+          bun-version: latest # You can also use a specific version
       - name: Checkout
         uses: actions/checkout@main
-
       - name: vuepress-deploy
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: worldline/ios-training
           TARGET_BRANCH: gh_pages
-          BUILD_SCRIPT: cd docs && npm ci && npm run build
+          BUILD_SCRIPT: cd docs && bun install && bun run build
           BUILD_DIR: src/.vuepress/dist/
