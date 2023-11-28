@@ -6,7 +6,7 @@ Le développement iOS consiste à développer des applications qui ciblent princ
 Il existe plusieurs façons d'y parvenir :
 
 - En utilisant les frameworks et outils officiels fournis par Apple.
-- En utilisant des frameworks et outils tiers tels que Capacitor, MAUI et FLutter.
+- En utilisant des frameworks et outils tiers tels que Capacitor, MAUI et Flutter.
 
 Cette formation se concentre sur le développement iOS en utilisant les outils et frameworks officiels proposés par Apple.
 Notre pile de développement sera composée des éléments suivants :

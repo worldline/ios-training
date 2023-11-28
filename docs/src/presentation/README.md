@@ -6,7 +6,7 @@ iOS development consists of developing applications that can target mainly the i
 There are many ways to achieve this:
 
 - Using the official frameworks and tools provided by Apple
-- Using 3rd party frameworks and tools such as Capacitor, MAUI and FLutter
+- Using 3rd party frameworks and tools such as Capacitor, MAUI and Flutter
 
 This training focuses on iOS development using the official tools and frameworks proposed by Apple.
 Our development stack will consist of the following items:

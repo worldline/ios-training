@@ -2,6 +2,8 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { nprogressPlugin } from "@vuepress/plugin-nprogress";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
+import { pwaPopupPlugin } from "@vuepress/plugin-pwa-popup";
+import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 
 module.exports = {
   base: "/ios-training/",
@@ -71,5 +73,7 @@ module.exports = {
     }),
     nprogressPlugin(),
     pwaPlugin({}),
+    pwaPopupPlugin({}),
+    backToTopPlugin(),
   ],
 };
