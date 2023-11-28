@@ -15,6 +15,7 @@ The app consists of a movie explorer app with the following features:
 - The app uses [this API](https://movie-api-ybwl.koyeb.app/api-docs/) for the authenticating and searching for movies.
   - The **/movies/search** endpoint requires to pass the token retrieved from endpoint **/user/login** or **user/register** in this header: `Authorization: Bearer \(userResponse.token)`
 - (Optional) The result of previous queries is locally cached.
+- (Optional) Add movie to local favorites ⭐️
 - (Optional) Animate the transition between the login view and the movie list view ([tutorial](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-and-remove-views-with-a-transition)).
 
 A preview of the app can be seen here.
