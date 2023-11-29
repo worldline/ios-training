@@ -2,7 +2,7 @@
 
 ## Server side development
 
-- Vapor is a Swift framrwork that allows to develop servers
+- Vapor is a Swift framework that allows to develop servers
 - Install the Vapor cli `brew install vapor`
 - Create a vapor project `vapor new hello-vapor -n`
 - Run the server: cd `hello-vapor` and `swift run`
