@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MovieDetailView: View {
-    let movie: Movie
+    @State var movie: Movie
     var body: some View {
         ScrollView {
             VStack {
