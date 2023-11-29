@@ -47,14 +47,16 @@ func uploadDataAsync() async -> Bool {
     guard let encoded = try? JSONEncoder().encode(user) else {
         return false
     }
-
-    /* URLSession native async API
+    
     guard let (responseBody, urlResponse) = await URLSession.shared.upload(for: request, from: encoded),
             (urlResponse as HTTPURLResponse).statusCode == 200 else {
         return false
     }
-    */
-        
+    
+    // parser la réponse en objet ou en struct
+    
+    // guard
+    
     return await withCheckedContinuation { continuation in
         uploadData(request: request, requestBody: encoded) { isSuccessful in
             continuation.resume(returning: isSuccessful)
