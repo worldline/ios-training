@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.9.0",
+    "@types/node": "^20.10.1",
     "@vuepress/plugin-back-to-top": "next",
     "@vuepress/plugin-docsearch": "next",
     "@vuepress/plugin-nprogress": "next",
