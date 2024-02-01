@@ -22,7 +22,7 @@
     "@vuepress/plugin-pwa": "next",
     "@vuepress/plugin-pwa-popup": "next",
     "@vuepress/plugin-search": "next",
-    "vuepress": "^v2.0.0-rc.0"
+    "vuepress": "^v2.0.0-rc.2"
   },
   "volta": {
     "node": "20.9.0"
