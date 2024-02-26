@@ -52,3 +52,13 @@ struct MovieListView: View {
         }
     }
 }
+
+
+struct Previews_MovieListView_Previews: PreviewProvider {
+    static var previews: some View {
+        let userResponse = UserResponse(user: User(id: 1, firstname: "", lastname: "", email: "", createdAt: "", updatedAt: ""), token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWwiOiJhQG1haWxpb3MuY29tIiwiZmlyc3RuYW1lIjoiSm9obiIsImxhc3RuYW1lIjoiRG9lIiwiY3JlYXRlZEF0IjoiMjAyMy0xMS0yOFQxNTo1NDo0OC42OTBaIiwidXBkYXRlZEF0IjoiMjAyMy0xMS0yOFQxNTo1NDo0OC42OTBaIiwiaWF0IjoxNzAxMjczNTkyLCJleHAiOjE3MDE4NzgzOTJ9.P5kmWFSVLtqoDVe0RR8D9tJ1BC9SDcsL7UDfH1-SgQc")
+        NavigationView {
+            MovieListView(userResponse: userResponse)
+        }
+    }
+}

@@ -27,9 +27,7 @@ struct ContentView: View {
                 withAnimation {
                     userResponse = newUserResponse
                 }
-                if let userResponse = userResponse {
-                    KeychainUtils.saveUserResponse(userResponse: userResponse)
-                }
+                KeychainUtils.saveUserResponse(userResponse: newUserResponse)
             }.padding()
         }
     }

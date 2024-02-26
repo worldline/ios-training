@@ -3,6 +3,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 
 export default defineUserConfig({
   bundler: viteBundler({
@@ -74,5 +75,6 @@ export default defineUserConfig({
       },
     }),
     pwaPlugin({}),
+    backToTopPlugin(),
   ],
 });

@@ -197,7 +197,7 @@ Task {
 [Please click on this link to view the exercise](https://swiftfiddle.com/d225e7e3b061035b6a1987c3cf2fb3d5)
 
 ::: details Please open to see the solution(s)
-[Solution](https://swiftfiddle.com/)
+[Solution](https://swiftfiddle.com/b45e785e8d832058e394f179782b214c)
 :::
 
 ## Sources and more reading
