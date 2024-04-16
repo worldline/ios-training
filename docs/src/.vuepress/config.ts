@@ -11,6 +11,7 @@ export default defineUserConfig({
     viteOptions: {},
     vuePluginOptions: {},
   }),
+  base: "/ios-training/",
   shouldPrefetch: false,
   locales: {
     "/": {
