@@ -2,14 +2,16 @@ import { pwaPlugin } from "@vuepress/plugin-pwa";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
+import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 
 export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: {},
     vuePluginOptions: {},
   }),
+  shouldPrefetch: false,
   locales: {
     "/": {
       lang: "en-US", // this will be set as the lang attribute on <html>
@@ -75,6 +77,12 @@ export default defineUserConfig({
       },
     }),
     pwaPlugin({}),
-    backToTopPlugin(),
+    mediumZoomPlugin({}),
+    mdEnhancePlugin({
+      imgLazyload: true,
+      imgSize: true,
+      figure: true,
+      imgMark: true,
+    }),
   ],
 });
