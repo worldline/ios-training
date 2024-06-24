@@ -22,6 +22,10 @@ It works!
 Hello, world!
 ```
 
+## Advanced Swift
+
+- [Macros allow to run actions on code at compile time](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros/)
+
 ## Conclusion
 
 This training was introduction on Swift and SwiftUI.

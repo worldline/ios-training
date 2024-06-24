@@ -8,17 +8,13 @@ actions:
     type: primary
 features:
   - title: Swift
-    details: Discover the Swift programming language (version 5.9)
+    details: Discover the Swift programming language (version 5.10)
   - title: SwiftUI
     details: Develop iOS applications
 footer: Worldline, 2021
 ---
 
 # Welcome
-
-::: tip
-This training is also available in [French](/fr/) / Cette formation est aussi disponible en [Français](/fr/)
-:::
 
 ## Prerequisites
 

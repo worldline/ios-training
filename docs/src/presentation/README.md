@@ -1,6 +1,6 @@
 # Presentation
 
-## What is iOS development ?
+## Welcompe the world of iOS development
 
 iOS development consists of developing applications that can target mainly the iPhone and iPad but also macOS, iWatch and Apple TV.
 There are many ways to achieve this:

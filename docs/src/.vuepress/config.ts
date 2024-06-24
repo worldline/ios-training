@@ -19,12 +19,6 @@ export default defineUserConfig({
       title: "iOS Training",
       description: "iOS training docs",
     },
-
-    "/fr/": {
-      lang: "fr-FR",
-      title: "Formation iOS",
-      description: "Support de formation iOS",
-    },
   },
   head: [
     ["link", { rel: "icon", href: "/ios-training/favicon.ico" }],

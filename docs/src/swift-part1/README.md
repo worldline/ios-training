@@ -7,7 +7,7 @@
 Swift is the official programming language for developing iOS, iPadOS, macOS, watchOS and AppleTV apps.
 It can also target other platforms such as Windows, Linux and Android.
 
-The source code of the language is hosted on [apple/swift](https://github.com/apple/swift) GitHub repository.
+The source code of the language toolchain is hosted in [swiftlang/swift](https://github.com/swiftlang/swift) GitHub repository.
 
 ## A quick tour of some features
 
