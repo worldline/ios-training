@@ -24,6 +24,9 @@ Hello, world!
 
 ## Advanced Swift
 
+- [Swift actors](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Actors)
+- [Swift 6 strict concurrency](https://developer.apple.com/documentation/Swift/AdoptingSwift6)
+- [Attributes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/)
 - [Macros allow to run actions on code at compile time](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros/)
 
 ## Conclusion

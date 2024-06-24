@@ -14,15 +14,15 @@ The source code of the language toolchain is hosted in [swiftlang/swift](https:/
 Swift has modern and interesting features. Here are some notable ones:
 
 - Swift is statically typed and supports implicit typing.
-  - *Static* typing: types cannot change on runtime (it is the opposite of dynamic typing).
-  - *Implicit* typing: the compiler can infer the type whenever possible.
+  - _Static_ typing: types cannot change on runtime (it is the opposite of dynamic typing).
+  - _Implicit_ typing: the compiler can infer the type whenever possible.
 - `var` creates mutable variables.
 - `let` creates immutable variables or constants.
 - String interpolation is available with this syntax `\(expression)`.
 - Parenthesis are not required in `if`, `for`, `while` and `switch` statements.
 - `if` and `switch` statements are expressions.
 - for-each is the only type of for loop available.
-- *Optionals* allows to write code free from null pointer errors (also called Null Safety in other languages).
+- _Optionals_ allows to write code free from null pointer errors (also called Null Safety in other languages).
 - Functional programming is supported (Higher-order functions and functions as 1st class items, etc.).
 - Object oriented programming is supported.
 - Interfaces are called protocols and they are used a lot.
@@ -38,7 +38,7 @@ In the following sections, we will delve into more features.
 
 ## Functions
 
-In the this section, the terms *argument* and *parameter* are used interchangeably.
+In the this section, the terms _argument_ and _parameter_ are used interchangeably.
 
 The declaration of functions in Swift has the following peculiarities:
 
@@ -61,11 +61,11 @@ Here is a brief listing of the these features:
 
 [This code](https://swiftfiddle.com/5d6b837c869bf23615376bc4cc70bcd1) illustrates these features.
 
-Let's explore in the next section, one of the most amazing features of Swift which is *Optionals*.
+Let's explore in the next section, one of the most amazing features of Swift which is _Optionals_.
 
 ## Optionals (aka. Null safety)
 
-In a nutshell, optionals is a compiler feature that allows you to avoid the infamous *Null pointer exception* or *npe*.
+In a nutshell, optionals is a compiler feature that allows you to avoid the infamous _Null pointer exception_ or _npe_.
 The Swift compiler provides null safety and reports errors and warnings when we manipulate nullable (also called optional) values.
 Here is a list of null safety features provided by swift:
 
@@ -74,15 +74,15 @@ In Swift, the null value is called `nil`
 :::
 
 - All types are non optional by default. This means that we cannot assign `nil` to a variable or an argument. For example, this code fails `var s: String = nil`.
-- A type can be made optional by suffixing it with a *?*. For example: `var s: String? = nil`.
+- A type can be made optional by suffixing it with a _?_. For example: `var s: String? = nil`.
 - You cannot call a method or a property of an optional type, unless you do one of those possibilities:
-  - Use optional chaining with the *?* suffix.
-  - Provide a default value with the *??* operator.
+  - Use optional chaining with the _?_ suffix.
+  - Provide a default value with the _??_ operator.
   - Unwrap the optional so that it becomes non optional.
-  - Force unwrap the optional using the *!* suffix. This should never be used as it bypasses compiler checks.
+  - Force unwrap the optional using the _!_ suffix. This should never be used as it bypasses compiler checks.
 
 ::: danger Never unwrap with !
-You must never force unwrap with the *!*.
+You must never force unwrap with the _!_.
 Use other unwrapping techniques instead.
 On of the rarest exceptions is with Interface builder's Outlets in UIKit `@IBOutlet var label: UILabel!`.
 Fortunately, since we are not using UIKit in this training, we will avoid this situation.
@@ -98,18 +98,18 @@ Enumerations allow to work with a group of values in a type-safe fashion. Swift 
 - Switch statements support enumerations.
 - You can easily iterate over an enum's values by using `: CaseIterable`.
 - You can associate values or provide a raw value to enumeration cases. Raw values can be implicitly assigned.
-- You can use another enumeration as associated value, this is called *recursive enumeration*.
+- You can use another enumeration as associated value, this is called _recursive enumeration_.
 
 [This code](https://swiftfiddle.com/d508deb3493e9b572eaf00891c91d8f0) illustrates some enumeration features. For further reading please consult [the official documentation](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html).
 
 ## Error management
 
-Swift provides two ways for error management: *Exceptions* and the *Result* type.
+Swift provides two ways for error management: _Exceptions_ and the _Result_ type.
 
 - Exceptions provide an alternate return route with the `throw [value]` keyword.
   - The thrown value must conform the `Error` protocol. We can even throw a [String](https://www.hackingwithswift.com/example-code/language/how-to-throw-errors-using-strings) that way.
   - We must call `throw` when we want to return an error. Throwing in a normal situation is a bad practice.
-  - We say that a function *throws* when it can `throw` and exception. It must have the `throws` qualifier.
+  - We say that a function _throws_ when it can `throw` and exception. It must have the `throws` qualifier.
   - When we call a function that throws, we must precede the call with `try` keyword
   - When we call a function that throws, we can either propagate its error if it is thrown or handle to stop its propagation.
 - The `Result` type is a an enum that has two possible cases: `success(Sucess)` or `failure(Failure)`

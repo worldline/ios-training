@@ -6,7 +6,7 @@
 
 ## Object oriented programming features
 
-Swift supports most *Object Oriented Programming* features:
+Swift supports most _Object Oriented Programming_ features:
 
 - Classes that can be instantiated into objects.
   - Constructors and destructors are called initializers and deinitializers respectively.
@@ -17,7 +17,7 @@ Swift supports most *Object Oriented Programming* features:
 - Overloading of operators and functions, [composition](https://www.avanderlee.com/swift/composition-inheritance-code-architecture/).
 - Static methods and properties are supported.
 - Generic types are supported
-- *Protocols* which are the equivalent of *Interfaces*.
+- _Protocols_ which are the equivalent of _Interfaces_.
   - Classes and structs can conform to multiple protocols.
   - Protocols can have [associated types](https://www.hackingwithswift.com/articles/74/understanding-protocol-associated-types-and-their-constraints) which is similar to generic types.
   - They are used a lot by swift developers to the point that there is a programming technique called **Protocol oriented programming**.
@@ -66,9 +66,9 @@ We'll show below a simple use case where we can define a method that returns an 
 
 // create a function that returns some Equatable
 // The compiler fails is the return type is just "Equatable"
-func makeInteger() -> some Equatable{ 
+func makeInteger() -> some Equatable{
   Int.random(in: 0...10)
-} 
+}
 
 let firstInteger = makeInteger()
 let secondInteger = makeInteger()
@@ -82,7 +82,7 @@ func makeString() -> some Equatable{
 let firstString = makeString()
 
 // Compiler error because the concrete type is not the same.
-print(firstInteger == firstString) 
+print(firstInteger == firstString)
 ```
 
 As of Swift 5.1 [opaque types are only available for return values](https://github.com/apple/swift-evolution/blob/main/proposals/0244-opaque-result-types.md).
@@ -173,6 +173,25 @@ Task {
 ```
 
 :::
+
+## Generics
+
+- Generics allow to pass a type as a parameter to a class, struct, enum or function.
+- A type parameter can be declares with `<T>` where `T` is the type parameter.
+- Examples
+  - `func printArray<T>(array: [T]) { for item in array { print(item) } }`
+  -
+- Swift can infer the type of the parameter if it is not provided and if it's not ambiguous.
+
+[this code](https://swiftfiddle.com/c2619f36b41875606075e1f4baf2b93a) illustrates some of the above features.
+
+## Key-paths
+
+- [Key-paths](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/#Key-Path-Expression) allow to refer to properties of a type.
+- They are created with the `\.propertyName` syntax.
+- They are often used to sort, filter, group and map collections and in SwiftUI to bind properties to UI elements.
+
+[this code](https://swiftfiddle.com/9a220108db372f3c2063d4d7275001a9) illustrates some of the above features.
 
 ## Exercises
 
