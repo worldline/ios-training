@@ -22,6 +22,12 @@ It works!
 Hello, world!
 ```
 
+## Swift and SwoftUI on the browser
+
+- [SwiftWasm](https://swiftwasm.org/) is a project that allows to run Swift code in the browser using WebAssembly.
+- [SwiftWasm Pad](https://pad.swiftwasm.org/) is an online editor that allows to write SwiftUI code and run it in the browser. It relies on the [TokamakUI](https://github.com/TokamakUI/Tokamak) framework which is SwiftUI-compatbile framework(or a re-implementation of SwiftUI) for the web.
+- [SwiftWebUI](https://github.com/swiftwebui/SwiftWebUI) is another project that allows to run a server that renders SwiftUI to the browser. Note that it is considered as a toy project by its creator.
+
 ## Advanced Swift
 
 - [Swift actors](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Actors)
