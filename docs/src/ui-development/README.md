@@ -109,6 +109,8 @@ Let's do more SwiftUI.
 - `@EnvironmentObject`: Allows to globally share data between views. An `@EnvironmentObject` conforms to the `ObservableObject` protocol and its properties have the `@Published` property wrapper.
 - `@ObservedObject`: Allows to observe changes in an object that conforms to the `ObservableObject` protocol.
 
+You can check samples in the _samples_ folder of the [training repository](https://github.com/worldline/ios-training)
+
 ## PW: complete some official SwiftUI tutorials
 
 Apple provides a comprehensive [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftui) that covers most of the basic use cases such as creating views and handling inputs, animations and transitions.
