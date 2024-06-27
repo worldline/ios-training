@@ -217,6 +217,7 @@ Task {
 
 ::: details Please open to see the solution(s)
 [Solution 1](https://swiftfiddle.com/b45e785e8d832058e394f179782b214c)
+
 [Solution 2 with results](https://swiftfiddle.com/6aac1fb721c00c565509dded883f7481)
 :::
 
