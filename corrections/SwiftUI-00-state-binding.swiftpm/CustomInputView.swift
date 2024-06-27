@@ -35,19 +35,30 @@ struct CustomInputView: View {
     }
 }
 
+struct CustomInputViewPreviewProvider: PreviewProvider {
+    @State static var isValidEmail = false
+    static var previews: some View {
+        CustomInputView(isValidEmail: $isValidEmail) { value in
+            print(value)
+        }.previewInterfaceOrientation(.landscapeRight)
+    }
+}
 
-//struct MyView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        @State var isValidEmail = false
-//        CustomInputView(isValidEmail: $isValidEmail)
-//    }
-//}
-//
-//#Preview {
-//    MyView_Previews()
-//}
 
-//#Preview("Custom view preiew 2") {
-//    @State var isValidEmail = false
-//    _ = CustomInputView(text: "Other preview", isValidEmail: $isValidEmail)
-//}
+struct CustomInputViewPreview: View {
+    @State var isValidEmail = false
+    var text = ""
+    var body: some View {
+        CustomInputView(text: text, isValidEmail: $isValidEmail) { value in
+            print(value)
+        }
+    }
+}
+
+#Preview() {
+    CustomInputViewPreview()
+}
+
+#Preview("Other custom preview") {
+    CustomInputViewPreview(text: "Other preview")
+}
