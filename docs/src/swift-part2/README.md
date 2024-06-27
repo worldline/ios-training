@@ -216,7 +216,8 @@ Task {
 [Please click on this link to view the exercise](https://swiftfiddle.com/d225e7e3b061035b6a1987c3cf2fb3d5)
 
 ::: details Please open to see the solution(s)
-[Solution](https://swiftfiddle.com/b45e785e8d832058e394f179782b214c)
+[Solution 1](https://swiftfiddle.com/b45e785e8d832058e394f179782b214c)
+[Solution 2 with results](https://swiftfiddle.com/6aac1fb721c00c565509dded883f7481)
 :::
 
 ## Sources and more reading
