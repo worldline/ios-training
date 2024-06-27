@@ -73,7 +73,7 @@ The body of the view has a `VStack` as its root element.
 A `VStack` is a container view that arrange its direct children vertically (on a column).
 The first child is a `Text` view and its second child is a `Button`.
 
-The `Text` view chains calls to some methods that we call *modifiers*.
+The `Text` view chains calls to some methods that we call _modifiers_.
 They allow to do anything that we want to the view that called it and they return a new `View` instance.
 This means that we can apply another modifier to the result of a modifier and so on (this is called chaining).
 This allows modifiers to have a declarative syntax that makes the code easy to understand.
@@ -81,6 +81,7 @@ SwiftUI provides built-in modifiers and allows us to create custom ones.
 Can you match all the modifiers used in the code and their effects ?
 
 ::: details The modifiers used are:
+
 ```swift
 font(...)
 foregroundColor(...)
@@ -88,6 +89,7 @@ padding(...)
 background(...)
 cornerRadius(...)
 ```
+
 :::
 
 The button has no action, meaning that is does nothing on click and its content is defined as an `HStack`.
@@ -100,20 +102,24 @@ The view renders as illustrated by the image below.
 
 Let's do more SwiftUI.
 
-## PW: complete the official SwiftUI tutorial
-
-Apple provides a [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftui) that covers most of the basic use cases such as creating views and handling inputs, animations and transitions.
-
-You can start the tutorial by clicking on "Get started".
-
-![Swift UI get started](../assets/swift-ui-tuto-start.png)
-
-You can also navigate between the different tutorials by using the top bar.
-
-![navigate Swift UI tutorial](../assets/swift-ui-tuto-navoigate.png)
-
 ## A summary of important concepts
 
 - `@State`: Single source of truth of a view and should not be shared with other views.
 - `@Binding`: allows to pass a reference of a state to a child view using `$state`.
 - `@EnvironmentObject`: Allows to globally share data between views. An `@EnvironmentObject` conforms to the `ObservableObject` protocol and its properties have the `@Published` property wrapper.
+- `@ObservedObject`: Allows to observe changes in an object that conforms to the `ObservableObject` protocol.
+
+## PW: complete some official SwiftUI tutorials
+
+Apple provides a comprehensive [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftui) that covers most of the basic use cases such as creating views and handling inputs, animations and transitions.
+
+Please cover these tutorials to get a good grasp of SwiftUI.
+
+- Basic layout
+  - [Creating and combining views](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) (40 min)
+  - [Building lists and navigation](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) (35 min)
+  - [Handling user input](https://developer.apple.com/tutorials/swiftui/handling-user-input) (20 min)
+- Animations and complex layouts
+  - [Animating views and transitions](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions) (20 min)
+  - [Composing complex interfaces](https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces) (20 min)
+  - [Working with UI controls](https://developer.apple.com/tutorials/swiftui/working-with-ui-controls) (25 min)
