@@ -1,6 +1,6 @@
 import SwiftUI
 
-class GlobalState: ObservableObject {
+final  class GlobalState: ObservableObject {
     @Published var score = 0
 }
 
@@ -9,7 +9,7 @@ struct MyApp01: App {
     @StateObject var globalState = GlobalState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(globalState)
         }
     }
 }
