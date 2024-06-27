@@ -120,6 +120,7 @@ Please cover these tutorials to get a good grasp of SwiftUI.
 - Basic layout
   - [Creating and combining views](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) (40 min)
   - [Building lists and navigation](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) (35 min)
+- State and binding
   - [Handling user input](https://developer.apple.com/tutorials/swiftui/handling-user-input) (20 min)
 - Animations and complex layouts
   - [Animating views and transitions](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions) (20 min)

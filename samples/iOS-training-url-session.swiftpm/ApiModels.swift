@@ -1,8 +1,8 @@
 struct Response: Codable {
-    var results: [Result]
+    var results: [Track]
 }
 
-struct Result: Codable, Equatable {
+struct Track: Codable, Equatable {
     var trackId: Int
     var trackName: String
     var collectionName: String

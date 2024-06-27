@@ -3,7 +3,7 @@ import SwiftUI
 enum ContentViewState: Equatable {
     case loading
     case fail(String)
-    case sucess([Result])
+    case sucess([Track])
 }
 
 struct ContentView: View {
