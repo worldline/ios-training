@@ -12,7 +12,7 @@ The app consists of a movie explorer app with the following features:
 - The app allows a new user to register.
 - The movie list screen allows to logout from the app.
 - The app remembers the logged in user after a restart.
-- The app uses [this API](https://movie-api-ybwl.koyeb.app/api-docs/) for the authenticating and searching for movies.
+- The app uses [this API](https://wl-training-api.koyeb.app/api-docs/) for the authenticating and searching for movies.
   - The **/movies/search** endpoint requires to pass the token retrieved from endpoint **/user/login** or **user/register** in this header: `Authorization: Bearer \(userResponse.token)`
 - (Optional) The result of previous queries is locally cached.
 - (Optional) Add movie to local favorites ⭐️
