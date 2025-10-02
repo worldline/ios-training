@@ -99,6 +99,9 @@ The view renders as illustrated by the image below.
 - `@Binding`: allows to pass a reference of a state to a child view using `$state`.
 - `@EnvironmentObject`: Allows to globally share data between views. An `@EnvironmentObject` conforms to the `ObservableObject` protocol and its properties have the `@Published` property wrapper.
 - `@ObservedObject`: Allows to observe changes in an object that conforms to the `ObservableObject` protocol.
+- `List`: A container view that displays a scrollable list of data.
+- `NavigationView` and `NavigationLink`: Allow to navigate between views.
+- `UserDefaults`: A simple way to persist small data such as user preferences.
 
 ### Examples:
 
@@ -108,14 +111,16 @@ This section provides links to download a folder from a git repository thanks to
 
 - This playground show an example of `@State` and `@Binding`: [State and Binding](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-00-state-binding.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-00-state-binding.swiftpm)
 - This playground show an example of `@EnvironmentObject`: [Environment Object](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-01-environment-object.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-01-environment-object.swiftpm)
+- This playground show an example of [`List`](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-03-list.swiftpm)
+- This playground show an example of [`NavigationView` to show the details view of a list](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-04-list-navigation.swiftpm)
+- This playground show an example of [`UserDefaults` with a screen that is shown only during the first visit](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-05-1st-visit.swiftpm)
+
 
 ## Exercises
 
 - Develop a `DateInputView` view that allows entering the day, month, and year with three TextFields. This component exposes a Date deduced from the input in the fields. If the data is incorrect, we take today's date as default.
-
-![Date input exercise](../assets/date-input-exercise.png)
-
-[Solution](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-02-binding-state-exercise.swiftpm) or can be downloaded with this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-02-binding-state-exercise.swiftpm)
+    ![Date input exercise](../assets/date-input-exercise.png)
+    - [Solution](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-02-binding-state-exercise.swiftpm) or can be downloaded with this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-02-binding-state-exercise.swiftpm)
 
 ## Additional PW: complete some official SwiftUI tutorials
 
