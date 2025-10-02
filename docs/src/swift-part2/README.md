@@ -216,7 +216,7 @@ Task {
 [Please click on this link to view the exercise](https://swiftfiddle.com/oyn7ii7dvne37h5uqiqoti5xou)
 
 ::: details Please open to see the solution(s)
-[Solution](https://swiftfiddle.com/wmxhyks6ijfjxgb3aopq2d6hdy)
+[Solution](https://swiftfiddle.com/7fsyuiu5fzdwtj2dhenxx3x5xm)
 :::
 
 ### Exercise 4 (legacy)
