@@ -109,6 +109,14 @@ This section provides links to download a folder from a git repository thanks to
 - This playground show an example of `@State` and `@Binding`: [State and Binding](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-00-state-binding.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-00-state-binding.swiftpm)
 - This playground show an example of `@EnvironmentObject`: [Environment Object](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-01-environment-object.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-01-environment-object.swiftpm)
 
+## Exercises
+
+- Develop a `DateInputView` view that allows entering the day, month, and year with three TextFields. This component exposes a Date deduced from the input in the fields. If the data is incorrect, we take today's date as default.
+
+![Date input exercise](../assets/date-input-exercise.png)
+
+[Solution]()
+
 ## Additional PW: complete some official SwiftUI tutorials
 
 Apple provides a comprehensive [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftui) that covers most of the basic use cases such as creating views and handling inputs, animations and transitions.

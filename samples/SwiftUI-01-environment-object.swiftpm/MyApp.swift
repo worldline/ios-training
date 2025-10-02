@@ -1,6 +1,6 @@
 import SwiftUI
 
-final  class GlobalState: ObservableObject {
+final class GlobalState: ObservableObject {
     @Published var score = 0
 }
 
