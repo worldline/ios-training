@@ -28,14 +28,7 @@ The [official documentation of SwiftUI is available here](https://developer.appl
 ## Prerequisites
 
 It is recommended to use Xcode to learn and create SwiftUI apps.
-For simple apps, we can use the [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) app.
-There is a [web playground](https://swiftui-playground.kishikawakatsumi.com/) that can be exceptionally used.
-You can see a screenshot of the tool below.
-
-![SwiftUI web playground](../assets/swftui-playground.png)
-
-Another promising alternative to watch is [compnerd's windows port](https://github.com/compnerd/swift-win32) of UIKit and SwiftUI.
-So, if you can have a recent version Xcode running, this is be the best IDE for SwiftUI development.
+For simple apps, we can use the [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) app or create a Playground in Xcode.
 
 ## Anatomy of a basic view
 
@@ -100,8 +93,6 @@ The view renders as illustrated by the image below.
 
 ![Hello SwiftUI](../assets/hello-swiftui.png)
 
-Let's do more SwiftUI.
-
 ## A summary of important concepts
 
 - `@State`: Single source of truth of a view and should not be shared with other views.
@@ -109,9 +100,16 @@ Let's do more SwiftUI.
 - `@EnvironmentObject`: Allows to globally share data between views. An `@EnvironmentObject` conforms to the `ObservableObject` protocol and its properties have the `@Published` property wrapper.
 - `@ObservedObject`: Allows to observe changes in an object that conforms to the `ObservableObject` protocol.
 
-You can check samples in the _samples_ folder of the [training repository](https://github.com/worldline/ios-training)
+### Examples:
 
-## PW: complete some official SwiftUI tutorials
+::: tip
+This section provides links to download a folder from a git repository thanks to [download-directory.github.io](https://download-directory.github.io).
+:::
+
+- This playground show an example of `@State` and `@Binding`: [State and Binding](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-00-state-binding.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-00-state-binding.swiftpm)
+- This playground show an example of `@EnvironmentObject`: [Environment Object](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-01-environment-object.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-01-environment-object.swiftpm)
+
+## Additional PW: complete some official SwiftUI tutorials
 
 Apple provides a comprehensive [SwiftUI tutorial](https://developer.apple.com/tutorials/swiftui) that covers most of the basic use cases such as creating views and handling inputs, animations and transitions.
 

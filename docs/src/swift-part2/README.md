@@ -205,7 +205,7 @@ Task {
 
 ### Exercise 2
 
-[Please click on this link to view the exercise](https://swiftfiddle.com/43fc226645abb5457d26c7176fb6009d)
+[Please click on this link to view the exercise](https://swiftfiddle.com/nujjokdzhrbo7gdcaxmqlwzdqi)
 
 ::: details Please open to see the solution(s)
 [Solution](https://swiftfiddle.com/a1227e17989ad80da5137a31aa6dfbeb)
