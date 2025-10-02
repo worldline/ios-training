@@ -115,7 +115,7 @@ This section provides links to download a folder from a git repository thanks to
 
 ![Date input exercise](../assets/date-input-exercise.png)
 
-[Solution]()
+[Solution](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-02-binding-state-exercise.swiftpm) or can be downloaded with this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-02-binding-state-exercise.swiftpm)
 
 ## Additional PW: complete some official SwiftUI tutorials
 
