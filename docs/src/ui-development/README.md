@@ -102,6 +102,7 @@ The view renders as illustrated by the image below.
 - `List`: A container view that displays a scrollable list of data.
 - `NavigationView` and `NavigationLink`: Allow to navigate between views.
 - `UserDefaults`: A simple way to persist small data such as user preferences.
+- `AsyncImage`: A view that can load and display an image from a URL.
 
 ### Examples:
 
@@ -111,8 +112,10 @@ This section provides links to download a folder from a git repository thanks to
 
 - This playground show an example of `@State` and `@Binding`: [State and Binding](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-00-state-binding.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-00-state-binding.swiftpm)
 - This playground show an example of `@EnvironmentObject`: [Environment Object](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-01-environment-object.swiftpm). You can download the project using this [link](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fworldline%2Fios-training%2Ftree%2Fmain%2Fsamples%2FSwiftUI-01-environment-object.swiftpm)
-- This playground show an example of [`List`](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-03-list.swiftpm)
+- This playground show an example of [`List` and `AsyncImage`](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-03-list.swiftpm)
 - This playground show an example of [`NavigationView` to show the details view of a list](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-04-list-navigation.swiftpm)
+    ![list-nav-01](../assets/list-nav-01.png)
+    ![list-nav-02](../assets/list-nav-02.png)
 - This playground show an example of [`UserDefaults` with a screen that is shown only during the first visit](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-05-1st-visit.swiftpm)
 
 
