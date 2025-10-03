@@ -8,7 +8,7 @@ struct ContentView: View {
     
     var body: some View {
         if let localUserResponse = userResponse {
-            NavigationView {
+            NavigationSplitView {
                 MovieListView(userResponse: localUserResponse)
                     .navigationTitle("Movies")
                     .toolbar {
@@ -21,6 +21,8 @@ struct ContentView: View {
                             }
                         }
                     }
+            } detail: {
+                Text("Movie list")
             }.transition(.move(edge: .bottom))
         } else {
             LoginView(userResponse: $userResponse.animation()).onChange(of: userResponse, { oldValue, newValue in

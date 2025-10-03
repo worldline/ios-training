@@ -28,7 +28,7 @@ struct LoginView: View {
                         userResponse = await callRegister()
                     }
                 }
-            }.disabled(loginState == .loading)
+            }.disabled(loginState == .loading || email.isEmpty || password.isEmpty)
             if loginState == .failure {
                 Text("Operation failed").foregroundColor(.red)
             }
@@ -71,9 +71,13 @@ struct LoginView: View {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.httpMethod = "POST"
+        request.httpBody = requestBody
         
-        let (data, response) = try await URLSession.shared.upload(for: request,from: requestBody)
-        print("response code", (response as? HTTPURLResponse)?.statusCode ?? -1, "response data", String(decoding: data, as: UTF8.self))
+        let (data, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse else {
+            return nil
+        }
+        print("response code", httpResponse.statusCode, "response data", String(decoding: data, as: UTF8.self))
         return try JSONDecoder().decode(UserResponse.self, from: data)
     }
 }

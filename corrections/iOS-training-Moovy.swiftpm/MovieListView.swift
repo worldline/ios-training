@@ -23,11 +23,7 @@ struct MovieListView: View {
             Task {
                 await searchMovies(query: query)
             }
-        }
-        .task(id: query, debounceTime: .milliseconds(250)) {
-            await searchMovies(query: query)
-        }
-        .task { // launch task on view load
+        }.task(id: query, debounceTime: .milliseconds(250)) {
             await searchMovies(query: query)
         }
     }
