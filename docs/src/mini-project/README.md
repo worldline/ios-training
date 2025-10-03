@@ -29,6 +29,24 @@ A preview of the app can be seen here.
  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
  allowfullscreen />
 
+::: warning API limit considerations
+
+To avoid reaching the OMDb API limit, the backend API used in this project is configured to return a fixed set of movie details for any search query.
+This means that some results will miss some fields.
+The code below shows how to handle optional fields in the Movie struct.
+
+```swift
+struct Movie: Codable {
+    let title: String
+    let released: String?
+    let director: String?
+    let actors: String?
+    let poster: String
+    let plot: String?
+    let metascore: String?
+}
+:::
+
 ## Hints
 
 - There are many techniques to handle the flow from the login view to the movie list view.

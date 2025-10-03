@@ -1,11 +1,11 @@
 struct Movie: Codable {
     let title: String
-    let released: String
-    let director: String
-    let actors: String
+    let released: String?
+    let director: String?
+    let actors: String?
     let poster: String
-    let plot: String
-    let metascore: String
+    let plot: String?
+    let metascore: String?
 }
 
 struct User: Codable {

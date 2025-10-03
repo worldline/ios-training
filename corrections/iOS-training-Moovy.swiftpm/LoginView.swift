@@ -8,7 +8,7 @@ struct LoginView: View {
     @State private var email = "a@mailios.com"
     @State private var password = "12345678"
     @State private var loginState: LoginState = .neutral
-    let onLoginSuccess: (UserResponse) -> Void
+    @Binding var userResponse: UserResponse?
     
     var body: some View {
         VStack {
@@ -19,17 +19,13 @@ struct LoginView: View {
                 Button("Login") { 
                     loginState = .loading
                     Task {
-                        if let userResponse = await callLogin() {
-                            onLoginSuccess(userResponse)
-                        }
+                        userResponse = await callLogin()
                     }
                 }
                 Button("Register") { 
                     loginState = .loading
                     Task {
-                        if let userResponse = await callRegister() {
-                            onLoginSuccess(userResponse)
-                        }
+                        userResponse = await callRegister()
                     }
                 }
             }.disabled(loginState == .loading)

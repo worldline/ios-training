@@ -24,10 +24,8 @@ struct MovieListView: View {
                 await searchMovies(query: query)
             }
         }
-        .onChange(of: query, debounceTime: 0.5) { newQuery in
-            Task {
-                await searchMovies(query: newQuery)
-            }
+        .task(id: query, debounceTime: .milliseconds(250)) {
+            await searchMovies(query: query)
         }
         .task { // launch task on view load
             await searchMovies(query: query)

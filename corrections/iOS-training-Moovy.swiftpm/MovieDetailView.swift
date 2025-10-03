@@ -8,10 +8,10 @@ struct MovieDetailView: View {
                 HStack {
                     Text("Movie \(movie.title)")
                     Spacer()
-                    Text(movie.metascore)
+                    Text(movie.metascore ?? "?")
                 }
                 AsyncImage(url: URL(string: movie.poster))
-                Text(movie.plot)
+                Text(movie.plot ?? "Not loaded")
             }.padding()
         }
     }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-let BASE_API_URL = "https://movie-api-ybwl.koyeb.app"
+let BASE_API_URL = "https://wl-training-api.koyeb.app"
 
 @main
 struct MyApp: App {

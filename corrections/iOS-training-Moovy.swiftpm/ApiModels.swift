@@ -1,4 +1,8 @@
-struct UserResponse: Codable {
+struct UserResponse: Codable, Equatable {
+    static func == (lhs: UserResponse, rhs: UserResponse) -> Bool {
+        lhs.token == rhs.token && lhs.user.email == rhs.user.email
+    }
+    
     let user: User
     let token: String
 }

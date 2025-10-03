@@ -23,12 +23,11 @@ struct ContentView: View {
                     }
             }.transition(.move(edge: .bottom))
         } else {
-            LoginView { newUserResponse in
-                withAnimation {
-                    userResponse = newUserResponse
+            LoginView(userResponse: $userResponse.animation()).onChange(of: userResponse, { oldValue, newValue in
+                if let newValue {
+                    KeychainUtils.saveUserResponse(userResponse: newValue)
                 }
-                KeychainUtils.saveUserResponse(userResponse: newUserResponse)
-            }.padding()
+            })
         }
     }
 }
