@@ -117,7 +117,8 @@ This section provides links to download a folder from a git repository thanks to
     ![list-nav-01](../assets/list-nav-01.png)
     ![list-nav-02](../assets/list-nav-02.png)
 - This playground show an example of [`UserDefaults` with a screen that is shown only during the first visit](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-05-1st-visit.swiftpm)
-
+- This example shows some [alignment customization](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-06-alignment.swiftpm)
+- This example shows how to add [a search bar to a list](https://github.com/worldline/ios-training/tree/main/samples/SwiftUI-07-searchable.swiftpm)
 
 ## Exercises
 

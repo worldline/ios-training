@@ -9,15 +9,14 @@ struct PokemonRow: View {
             } placeholder: {
                 Image(systemName: "heart.fill")
             }
-            VStack(alignment: .trailing) {
-                Text(pokemon.name)
-                Text(pokemon.url)
-            }
+            Text(pokemon.name)
         }
     }
 }
 
 struct ContentView: View {
+    @State var searchText = ""
+    @State var pokemons = globalPokemons
     var body: some View {
         VStack {
             NavigationSplitView {
@@ -26,6 +25,10 @@ struct ContentView: View {
                         PokemonDetailView(pokemon: pokemon)
                     } label: {
                         PokemonRow(pokemon: pokemon)
+                    }
+                }.searchable(text:$searchText).onChange(of: searchText) { oldValue, newValue in
+                    pokemons = pokemons.filter { p in
+                        p.name.lowercased().contains(searchText.lowercased())
                     }
                 }
             } detail: {
@@ -37,8 +40,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}
-
-#Preview("PokemonRow") {
-    PokemonRow(pokemon: pokemons.first!)
 }
