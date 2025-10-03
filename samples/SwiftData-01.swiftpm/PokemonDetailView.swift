@@ -12,5 +12,5 @@ struct PokemonDetailView : View {
 }
 
 #Preview {
-    PokemonDetailView(pokemon: globalPokemons.first!)
+    PokemonDetailView(pokemon: Pokemon.sampleData.first!)
 }

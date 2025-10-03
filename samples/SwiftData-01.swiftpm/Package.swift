@@ -8,15 +8,15 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "SwiftUI-06-alignement",
+    name: "SwiftData-01",
     platforms: [
-        .iOS("17.0")
+        .iOS("18.0")
     ],
     products: [
         .iOSApplication(
-            name: "SwiftUI-06-alignement",
+            name: "SwiftData-01",
             targets: ["AppModule"],
-            bundleIdentifier: "wl.iostraining.SwiftUI-06-alignement",
+            bundleIdentifier: "wl.iostraining.SwiftData-01",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .beachball),

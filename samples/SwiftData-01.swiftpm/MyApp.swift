@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 @main
 struct MyApp: App {
@@ -10,6 +11,6 @@ struct MyApp: App {
             } else {
                 FirstVisitView(completed: $completedVisit)
             }
-        }
+        }.modelContainer(for: Pokemon.self)
     }
 }

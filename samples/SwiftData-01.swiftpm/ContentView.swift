@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct PokemonRow: View {
     let pokemon: Pokemon
@@ -16,19 +17,21 @@ struct PokemonRow: View {
 
 struct ContentView: View {
     @State var searchText = ""
-    @State var pokemons = globalPokemons
+    @Environment(\.modelContext) private var context
+    @Query(sort: \Pokemon.name) private var pokemons: [Pokemon]
     var body: some View {
         VStack {
             NavigationSplitView {
+                Button("Add pokemon") {
+                    let p = Pokemon(name:"bulbasaur\(Int.random(in:0...1000))",url:"https://pokeapi.co/api/v2/pokemon/1/")
+                    context.insert(p)
+                    try? context.save()
+                }
                 List(pokemons) { pokemon in
                     NavigationLink {
                         PokemonDetailView(pokemon: pokemon)
                     } label: {
                         PokemonRow(pokemon: pokemon)
-                    }
-                }.searchable(text:$searchText).onChange(of: searchText) { oldValue, newValue in
-                    pokemons = pokemons.filter { p in
-                        p.name.lowercased().contains(searchText.lowercased())
                     }
                 }
             } detail: {
@@ -38,6 +41,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
+#Preview("Pokemon List", traits: .pokemonSampleData) {
     ContentView()
 }

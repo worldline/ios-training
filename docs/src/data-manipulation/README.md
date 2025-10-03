@@ -150,6 +150,8 @@ Another one consists of creating and managing a file by the developer using file
 Swift Data is a framework introduced by Apple since iOS 17.0 to simplify data management in Swift applications.
 It inherits many concepts from Core Data (read more about Core Data below) but it is more straightforward to use.
 
+This project shows an example of using [Swift Data in a SwiftUI application](https://github.com/worldline/ios-training/tree/main/samples/SwiftData-01.swiftpm).
+
 ### Data persistence libraries
 
 For storing data in a database or similar fashion, SQLite is available as a low level library.
