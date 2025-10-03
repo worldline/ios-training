@@ -9,9 +9,17 @@ updates:
     directory: "/docs" # Location of package manifests
     schedule:
       interval: "monthly"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "*" # Group all updates
   - package-ecosystem: "swift"
     directories:
-      - "/samples"
-      - "/corrections"
+      - "/samples/**"
+      - "/corrections/**"
     schedule:
       interval: "monthly"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "*"
