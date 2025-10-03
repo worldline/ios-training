@@ -1,4 +1,4 @@
-# UI development
+# SwiftUI
 
 ::: tip Estimated time
 1/2 day

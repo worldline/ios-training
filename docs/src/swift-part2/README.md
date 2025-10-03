@@ -211,15 +211,7 @@ Task {
 [Solution](https://swiftfiddle.com/a1227e17989ad80da5137a31aa6dfbeb)
 :::
 
-### Exercise 3
-
-[Please click on this link to view the exercise](https://swiftfiddle.com/oyn7ii7dvne37h5uqiqoti5xou)
-
-::: details Please open to see the solution(s)
-[Solution](https://swiftfiddle.com/7fsyuiu5fzdwtj2dhenxx3x5xm)
-:::
-
-### Exercise 4 (legacy)
+### Exercise 3 (deprecated)
 
 [Please click on this link to view the exercise](https://swiftfiddle.com/d225e7e3b061035b6a1987c3cf2fb3d5)
 

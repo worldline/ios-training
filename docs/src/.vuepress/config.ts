@@ -3,8 +3,8 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
 import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { markdownImagePlugin } from "@vuepress/plugin-markdown-image";
 
 export default defineUserConfig({
   bundler: viteBundler({
@@ -36,9 +36,8 @@ export default defineUserConfig({
           "/presentation/",
           "/swift-part1/",
           "/swift-part2/",
-          "/ui-development/",
-          "/api-communication/",
-          "/persist-data/",
+          "/swiftui/",
+          "/data-manipulation/",
           "/mini-project/",
           "/to-go-further/",
         ],
@@ -71,13 +70,13 @@ export default defineUserConfig({
         },
       },
     }),
+    markdownImagePlugin({
+      figure: true,
+      lazyload: true,
+      mark: true,
+      size: true,
+    }),
     pwaPlugin({}),
     mediumZoomPlugin({}),
-    mdEnhancePlugin({
-      imgLazyload: true,
-      imgSize: true,
-      figure: true,
-      imgMark: true,
-    }),
   ],
 });
