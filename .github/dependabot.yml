@@ -14,9 +14,7 @@ updates:
         patterns:
           - "*" # Group all updates
   - package-ecosystem: "swift"
-    directories:
-      - "/samples/**"
-      - "/corrections/**"
+    directory: "/"
     schedule:
       interval: "monthly"
     groups:
